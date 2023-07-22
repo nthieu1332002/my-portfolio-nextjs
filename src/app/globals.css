@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.tooltip {
+    z-index: 1;
+}
+
 .tooltip::before,
 .tooltip::after {
     --scale: 0;

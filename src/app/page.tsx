@@ -2,15 +2,18 @@
 import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 import style from "./home.module.css";
 import { Typewriter } from "react-simple-typewriter";
+import AnimatedText from "@/components/AnimatedText/AnimatedText";
 export default function Home() {
   return (
     <>
-    <TransitionEffect></TransitionEffect>
+    <TransitionEffect/>
       <div className={style.home}>
         <div className={style.content}></div>
         <div className="absolute top-0 left-0 flex justify-center items-center w-full h-full">
           <div className="text-center">
-            <div className={style.title}>Nguyen Trung Hieu</div>
+            <div className={style.title}>
+              <AnimatedText text="Nguyen Trung Hieu"></AnimatedText>
+              </div>
             <div>
               <h1
                 style={{

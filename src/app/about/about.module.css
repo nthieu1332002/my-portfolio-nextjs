@@ -1,0 +1,15 @@
+.title {
+    font-weight: bold;
+    font-size: 6rem;
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    width: 100%;
+    opacity: 0.05;
+    white-space: nowrap;
+    line-height: 170px;
+    text-align: center;
+    overflow: hidden;
+}

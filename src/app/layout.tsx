@@ -2,11 +2,10 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import SideBar from "@/components/Sidebar/Sidebar";
-
 const mont = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "My Portfolio | Nguyen Trung Hieu",
   description: "Nguyen Trung Hieu",
 };
 

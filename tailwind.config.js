@@ -17,6 +17,7 @@ module.exports = {
         'white-primary': '#a1a1a1',
         'primary': '#ee6192',
         'secondary': '#2b2d30',
+        'button-bg': '#35373b'
       },
     },
   },
