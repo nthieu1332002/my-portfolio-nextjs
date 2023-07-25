@@ -26,7 +26,7 @@ export default function Home() {
                 I am a{" "}
                 <span style={{ color: "white", fontWeight: "bold" }}>
                   <Typewriter
-                    words={["Front-end Developer.", "Mobile Developer."]}
+                    words={["Software Engineer.","Front-end Developer.", "Mobile Developer."]}
                     loop={5}
                     cursor
                     cursorStyle="_"

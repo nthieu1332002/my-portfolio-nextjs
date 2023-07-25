@@ -11,7 +11,7 @@ type ButtonProps = {
 
 const CustomButton = ({ icon, text }: ButtonProps) => {
   return (
-    <button className="flex gap-2 text-sm font-bold p-3 px-4 rounded-full text-white bg-button-bg hover:text-primary duration-500">
+    <button className="flex gap-2 text-sm font-bold p-3 px-4 rounded-full text-white bg-button-bg hover:text-primary hover:-translate-y-1 hover:drop-shadow-lg duration-500">
       {icon} {text}
     </button>
   );

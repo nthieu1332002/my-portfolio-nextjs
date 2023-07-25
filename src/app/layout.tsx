@@ -19,7 +19,7 @@ export default function RootLayout({
       <body>
         <div className="flex">
           <SideBar />
-          <div className="bg-slate-500 w-screen h-screen">{children}</div>
+          <div className="bg-gray-800 w-screen h-screen">{children}</div>
         </div>
       </body>
     </html>

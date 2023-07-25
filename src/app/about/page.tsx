@@ -7,18 +7,20 @@ import { PiDownloadSimpleBold } from "react-icons/pi";
 import { BsGithub } from "react-icons/bs";
 import { AiOutlineFacebook } from "react-icons/ai";
 
-import img from "../../../public/profile.jpg";
+import img from "../../../public/assets/profile.jpg";
 import Image from "next/image";
 import CustomButton from "@/components/CustomButton/CustomButton";
+import Skills from "@/components/Skills/Skills";
+
 const About = () => {
   return (
     <>
       <TransitionEffect />
       <div className="flex w-full h-full">
-        <div className="content flex-1 pt-20">
-          <div className="relative text-center px-5 py-10">
-            <div className={style.title}>portfolio</div>
-            <div className="text-xl px-4 text-white">
+        <div className="content flex-1 pt-28 overscroll-auto">
+          <div className="relative text-center px-5 py-12">
+            <div className="font-bold text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden">portfolio</div>
+            <div className="text-xl px-4 text-white leading-9">
               <p>
                 <strong className="text-primary">
                   Hello, I&apos;m Trung Hieu. {' '}
@@ -36,6 +38,7 @@ const About = () => {
               <CustomButton icon={<AiOutlineFacebook size={20}/>}/>
             </div>
           </div>
+          <Skills/>
         </div>
         <div className="image-container flex-1 bg-slate-600">
           {/* <Image src={img} alt="" className="object-cover h-full" /> */}

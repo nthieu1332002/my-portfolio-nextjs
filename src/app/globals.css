@@ -31,6 +31,12 @@
     --scale: 1;
 }
 
+.section-title {
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: white;
+}
+
 body {
     margin: 0;
     padding: 0;
