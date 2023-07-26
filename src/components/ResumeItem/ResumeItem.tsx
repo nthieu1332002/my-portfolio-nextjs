@@ -14,7 +14,7 @@ const ResumeItem = ({name, time, company,link , description}: Experience) => {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.8
+        delay: 1.5
       },
     },
   };

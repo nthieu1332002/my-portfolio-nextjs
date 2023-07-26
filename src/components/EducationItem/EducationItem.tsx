@@ -13,7 +13,7 @@ const EducationItem = ({name, time, title, link , description}: Education) => {
       opacity: 1,
       y: 0,
       transition: {
-        delay: 0.1
+        delay: 1.3
       },
     },
   };

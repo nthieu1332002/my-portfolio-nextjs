@@ -16,7 +16,7 @@ const Sidebar = () => {
     { title: "Home", icon: <BiHomeAlt />, link: "/" },
     { title: "About", icon: <BiUser />, link: "/about" },
     { title: "Resume", icon: <IoNewspaperOutline />, link: "/resume" },
-    { title: "Portfolio", icon: <LuList />, link: "/porfolio" },
+    { title: "Portfolio", icon: <LuList />, link: "/portfolio" },
     { title: "Contact", icon: <AiOutlineMail />, link: "/contact" },
   ];
 

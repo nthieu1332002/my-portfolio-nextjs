@@ -46,7 +46,11 @@ const EducationList: Education[] = [
     time: "2020",
     title: "British Council",
     link: "https://github.com/nthieu1332002/certifications",
-    description: [],
+    description: [
+      {
+        detail: "Ielts 5.5"
+      }
+    ],
   },
   {
     name: "Bachelor's Degree",
@@ -61,14 +65,14 @@ const EducationList: Education[] = [
     ],
   },
 ];
-const page = () => {
+const Resume = () => {
   return (
     <>
-      {/* <TransitionEffect /> */}
+      <TransitionEffect />
       <div className="flex w-full h-full">
-        <div className="content flex-1 pt-28 overscroll-auto">
+        <div className="content flex-1 pt-28 py-20 overflow-scroll overflow-x-hidden">
           <div className="relative px-5 py-12">
-            <div className="font-bold text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden">
+            <div className="font-bold text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
               resume
             </div>
             <div className="flex gap-5">
@@ -119,4 +123,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Resume;
