@@ -10,8 +10,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-      },
       colors: {
         'nav-bg': '#181818',
         'white-primary': '#a1a1a1',

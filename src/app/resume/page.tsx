@@ -70,7 +70,7 @@ const Resume = () => {
     <>
       <TransitionEffect />
       <div className="flex w-full h-full">
-        <div className="content flex-1 pt-28 py-20 overflow-scroll overflow-x-hidden">
+        <div className="content flex-1 pt-28 py-20  overflow-y-scroll no-scrollbar">
           <div className="relative px-5 py-12">
             <div className="font-bold text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
               resume
