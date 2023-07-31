@@ -11,7 +11,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 const Sidebar = () => {
   const router = usePathname();
-  console.log("router", router);
   const Menus = [
     { title: "Home", icon: <BiHomeAlt />, link: "/" },
     { title: "About", icon: <BiUser />, link: "/about" },
@@ -34,37 +33,36 @@ const Sidebar = () => {
   ];
   return (
     <div className="flex flex-col justify-between bg-nav-bg h-screen p-2 pt-8 w-16">
-      <div className="flex items-center">
-        <ul className="pt-2">
-          {Menus.map((menu, index) => (
-            <li
-              key={index}
-              data-tooltip={menu.title}
-              className={`relative  text-xl p-3 cursor-pointer  ${
-                router === menu.link
-                  ? "text-primary hover:text-primary"
-                  : "text-white-primary hover:text-white tooltip"
-              }`}
-            >
-              <Link href={menu.link}>{menu.icon}</Link>
-            </li>
-          ))}
-        </ul>
+      <div className="flex flex-col items-center">
+        {Menus.map((menu, index) => (
+          <Link
+            key={index}
+            data-tooltip={menu.title}
+            href={menu.link}
+            className={`relative text-xl p-3 cursor-pointer  ${
+              router === menu.link
+                ? "text-primary hover:text-primary"
+                : "text-white-primary hover:text-white tooltip"
+            }`}
+          >
+            {menu.icon}
+          </Link>
+        ))}
       </div>
       <div>
-        <ul className="pt-2">
+        <div className="flex flex-col items-center">
           {Socials.map((menu, index) => (
-            <li
+            <Link
+              href={menu.link}
+              target="_blank"
               key={index}
               data-tooltip={menu.title}
               className="relative text-white-primary text-xl p-3 cursor-pointer hover:text-white tooltip"
             >
-              <Link href={menu.link} target="_blank">
-                {menu.icon}
-              </Link>
-            </li>
+              {menu.icon}
+            </Link>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

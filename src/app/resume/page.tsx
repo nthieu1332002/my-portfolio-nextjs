@@ -113,7 +113,6 @@ const Resume = () => {
               </div>
             </div>
           </div>
-          {/* <Skills/> */}
         </div>
         <div className="image-container flex-1 bg-slate-600">
           {/* <Image src={img} alt="" className="object-cover h-full" /> */}

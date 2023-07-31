@@ -17,10 +17,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={mont.className}>
       <body>
-        <div className="flex">
-          <SideBar />
-          <div className="bg-gray-800 w-screen h-screen">{children}</div>
-        </div>
+          <div className="flex">
+            <SideBar />
+            <div className="bg-gray-800 w-screen h-screen">{children}</div>
+          </div>
+
       </body>
     </html>
   );

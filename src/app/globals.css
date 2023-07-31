@@ -37,6 +37,19 @@
     color: white;
 }
 
+.input, .textarea {
+    color: white;
+    background: transparent;
+    padding: 0.5rem 1rem;
+    border: 1px solid grey;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+.textarea {
+    min-height: 5rem;
+}
+
+
 @layer utilities {
     @variants responsive {
       /* Hide scrollbar for Chrome, Safari and Opera */

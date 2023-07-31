@@ -22,7 +22,7 @@ const ProjectModal = ({ item, setSelectedItem }: ProjectModalProps) => {
           x
         </div>
 
-        <div className="mx-auto my-10 max-w-[650px]  bg-white p-6 rounded-lg">
+        <div className="mx-auto my-5 max-w-[650px] bg-white p-6 rounded-lg">
           <Image
             src={item.img}
             alt={item.name}
@@ -35,22 +35,34 @@ const ProjectModal = ({ item, setSelectedItem }: ProjectModalProps) => {
           </div>
           <div className="font-semibold mb-5">{item.type}</div>
           <div className="mb-4">
-            {item.detail.map((item, index) => {
-              return (
-                <p
-                  key={index}
-                  className="relative mt-1 pl-4 before:content-[''] before:absolute before:bg-primary before:rounded-full before:w-2 before:h-2 before:top-[20%] before:left-0"
-                >
-                  {item.detailItem}
-                </p>
-              );
-            })}
+            <ul>
+              {item.detail.map((item, index) => {
+                return (
+                  <li
+                    key={index}
+                    className="before:content-['\2022'] before:text-primary before:font-bold before:text-2xl before:inline-block before:w-[1em]"
+                  >
+                    {item.detailItem}
+                  </li>
+                );
+              })}
+            </ul>
           </div>
           <div className="flex gap-2 justify-end">
-            <a target="_blank" href={item.repository} rel="noopener noreferrer" className="text-sm font-bold p-3 px-4 rounded-full text-primary bg-white  hover:-translate-y-1 hover:drop-shadow-lg duration-300">
+            <a
+              target="_blank"
+              href={item.repository}
+              rel="noopener noreferrer"
+              className="text-sm font-bold p-3 px-4 rounded-full text-primary bg-white  hover:-translate-y-1 hover:drop-shadow-lg duration-300"
+            >
               Repository
             </a>
-            <a target="_blank" href={item.demo} rel="noopener noreferrer" className="text-sm font-bold p-3 px-4 rounded-full text-white bg-primary  hover:-translate-y-1 hover:drop-shadow-lg duration-300">
+            <a
+              target="_blank"
+              href={item.demo}
+              rel="noopener noreferrer"
+              className="text-sm font-bold p-3 px-4 rounded-full text-white bg-primary  hover:-translate-y-1 hover:drop-shadow-lg duration-300"
+            >
               View on website
             </a>
           </div>

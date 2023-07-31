@@ -3,7 +3,7 @@
 import AnimatedNumber from "@/components/AnimatedNumber/AnimatedNumber";
 import ProjectContainer from "@/components/ProjectContainer/ProjectContainer";
 import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { PiFire } from "react-icons/pi";
 import { SlPeople, SlCup } from "react-icons/sl";
 import imiu from "../../../public/assets/imiu.png";
@@ -15,9 +15,10 @@ import portfolioold1 from "../../../public/assets/portfolioold1.png";
 import thehstore from "../../../public/assets/thehstore.png";
 
 import hmovie from "../../../public/assets/hmovie.png";
-
+import { AnimatePresence, motion } from "framer-motion";
 import { StaticImageData } from "next/image";
 import ProjectModal from "@/components/ProjectModal/ProjectModal";
+import ProjectNavBar from "@/components/ProjectNavBar/ProjectNavBar";
 
 interface Detail {
   detailItem: string;
@@ -34,6 +35,29 @@ export interface Project {
   repository: string;
   demo: string;
 }
+
+const ProjectNavList = [
+  {
+    id: 1,
+    name: "Everything",
+  },
+  {
+    id: 2,
+    name: "Application",
+  },
+  {
+    id: 3,
+    name: "UI Design",
+  },
+  {
+    id: 4,
+    name: "API",
+  },
+  {
+    id: 5,
+    name: "Ecommerce",
+  },
+];
 
 const ProjectList: Project[] = [
   {
@@ -183,7 +207,19 @@ const ProjectList: Project[] = [
 
 const Portfolio = () => {
   const [selectedItem, setSelectedItem] = useState<Project | undefined>();
-  console.log("selectedItem", selectedItem);
+  const [selectedType, setSelectedType] = useState("Everything");
+  const [filteredList, setFilteredList] = useState(ProjectList);
+
+  useEffect(() => {
+    if (selectedType !== "Everything") {
+      setFilteredList(
+        ProjectList.filter((project) => project.type.includes(selectedType))
+      );
+    } else {
+      setFilteredList(ProjectList);
+    }
+  }, [selectedType]);
+
   const removeItem = () => {
     setSelectedItem(undefined);
   };
@@ -230,17 +266,32 @@ const Portfolio = () => {
             <h2 className="section-title mb-5">
               <span className="text-primary">My</span> Portfolio
             </h2>
-            <div className="flex justify-start flex-wrap md:gap-2 lg:gap-5">
-              {ProjectList.map((item, index) => {
-                return (
-                  <ProjectContainer
-                    key={item.id}
-                    item={item}
-                    setSelectedItem={setSelectedItem}
-                  />
-                );
-              })}
+            <div className="flex gap-5 justify-center font-semibold mb-5">
+              {ProjectNavList.map((item) => (
+                <ProjectNavBar
+                  key={item.id}
+                  text={item.name}
+                  selectedType={selectedType}
+                  setSelectedType={setSelectedType}
+                />
+              ))}
             </div>
+            <motion.div
+              layout
+              className="flex justify-start items-stretch flex-wrap ml-2 my-0"
+            >
+              <AnimatePresence>
+                {filteredList.map((item) => {
+                  return (
+                    <ProjectContainer
+                      key={item.id}
+                      item={item}
+                      setSelectedItem={setSelectedItem}
+                    />
+                  );
+                })}
+              </AnimatePresence>
+            </motion.div>
           </div>
         </div>
         <div className="image-container flex-1 bg-slate-600">
