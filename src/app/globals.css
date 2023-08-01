@@ -12,12 +12,12 @@
     position: absolute;
     top: 0;
     right: 0;
-    transform: translateX(140%) translateY(25%) scale(var(--scale));
+    transform: translateX(-75%) translateY(0%) scale(var(--scale));
     transition: 0.25s transform;
-    transform-origin: left center;
+    transform-origin: right center;
 }
 
-.tooltip::before {
+.tooltip::after {
     content: attr(data-tooltip);
     font-size: 0.7rem;
     color: white;
@@ -27,7 +27,7 @@
     background-color: #181818;
 }
 
-.tooltip:hover::before {
+.tooltip:hover::after {
     --scale: 1;
 }
 
@@ -37,7 +37,8 @@
     color: white;
 }
 
-.input, .textarea {
+.input,
+.textarea {
     color: white;
     background: transparent;
     padding: 0.5rem 1rem;
@@ -45,6 +46,7 @@
     border-radius: 0.5rem;
     width: 100%;
 }
+
 .textarea {
     min-height: 5rem;
 }
@@ -52,18 +54,21 @@
 
 @layer utilities {
     @variants responsive {
-      /* Hide scrollbar for Chrome, Safari and Opera */
-      .no-scrollbar::-webkit-scrollbar {
-          display: none;
-      }
 
-      /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
-      }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none !important;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none !important;
+            /* IE and Edge */
+            scrollbar-width: none !important;
+            /* Firefox */
+        }
     }
-  }
+}
 
 body {
     margin: 0;

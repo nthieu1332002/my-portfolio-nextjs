@@ -13,6 +13,9 @@ module.exports = {
       width: {
         lg_size: "calc(50% - 1rem)",
       },
+      height: {
+        lg_size: "calc(33% - 1rem)"
+      },
       colors: {
         "nav-bg": "#181818",
         "white-primary": "#a1a1a1",

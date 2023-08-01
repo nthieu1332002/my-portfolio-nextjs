@@ -6,14 +6,14 @@ import AnimatedText from "@/components/AnimatedText/AnimatedText";
 export default function Home() {
   return (
     <>
-    <TransitionEffect/>
+      <TransitionEffect />
       <div className={style.home}>
         <div className={style.content}></div>
         <div className="absolute top-0 left-0 flex justify-center items-center w-full h-full">
           <div className="text-center">
-            <div className={style.title}>
+            <div className="text-4xl md:text-[66px] md:leading-[66px] text-white font-bold">
               <AnimatedText text="Nguyen Trung Hieu"></AnimatedText>
-              </div>
+            </div>
             <div>
               <h1
                 style={{
@@ -26,7 +26,11 @@ export default function Home() {
                 I am a{" "}
                 <span style={{ color: "white", fontWeight: "bold" }}>
                   <Typewriter
-                    words={["Software Engineer.","Front-end Developer.", "Mobile Developer."]}
+                    words={[
+                      "Software Engineer.",
+                      "Front-end Developer.",
+                      "Mobile Developer.",
+                    ]}
                     loop={5}
                     cursor
                     cursorStyle="_"

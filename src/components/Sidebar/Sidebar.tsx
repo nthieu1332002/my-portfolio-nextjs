@@ -32,37 +32,22 @@ const Sidebar = () => {
     },
   ];
   return (
-    <div className="flex flex-col justify-between bg-nav-bg h-screen p-2 pt-8 w-16">
-      <div className="flex flex-col items-center">
+    <div className="flex flex-col justify-center fixed bottom-0 z-50 w-full md:right-[0.5%] md:h-full md:w-12">
+      <div className="flex flex-row justify-evenly py-4 md:rounded-full md:flex-col md:items-center md:gap-10 md:py-10 bg-nav-bg">
         {Menus.map((menu, index) => (
           <Link
             key={index}
             data-tooltip={menu.title}
             href={menu.link}
-            className={`relative text-xl p-3 cursor-pointer  ${
+            className={`relative text-2xl md:text-lg cursor-pointer  ${
               router === menu.link
                 ? "text-primary hover:text-primary"
-                : "text-white-primary hover:text-white tooltip"
+                : "text-white-primary hover:text-white md:tooltip"
             }`}
           >
             {menu.icon}
           </Link>
         ))}
-      </div>
-      <div>
-        <div className="flex flex-col items-center">
-          {Socials.map((menu, index) => (
-            <Link
-              href={menu.link}
-              target="_blank"
-              key={index}
-              data-tooltip={menu.title}
-              className="relative text-white-primary text-xl p-3 cursor-pointer hover:text-white tooltip"
-            >
-              {menu.icon}
-            </Link>
-          ))}
-        </div>
       </div>
     </div>
   );

@@ -3,6 +3,11 @@
 import EducationItem from "@/components/EducationItem/EducationItem";
 import ResumeItem from "@/components/ResumeItem/ResumeItem";
 import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
+import { fadeIn } from "@/utils/variants";
+import { motion } from "framer-motion";
+import img from "../../../public/assets/imiu.png";
+
+import Image from "next/image";
 import React from "react";
 
 interface Description {
@@ -48,8 +53,8 @@ const EducationList: Education[] = [
     link: "https://github.com/nthieu1332002/certifications",
     description: [
       {
-        detail: "Ielts 5.5"
-      }
+        detail: "Ielts 5.5",
+      },
     ],
   },
   {
@@ -69,17 +74,23 @@ const Resume = () => {
   return (
     <>
       <TransitionEffect />
-      <div className="flex w-full h-full">
-        <div className="content flex-1 pt-28 py-20  overflow-y-scroll no-scrollbar">
+      <div className="lg:relative lg:min-h-screen lg:h-full flex flex-col-reverse">
+        <div className="pt-10 py-20 lg:w-1/2 lg:pt-28 lg:py-20">
           <div className="relative px-5 py-12">
-            <div className="font-bold text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
+            <div className="font-bold text-[4rem] lg:text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
               resume
             </div>
-            <div className="flex gap-5">
-              <div className="my-experience flex-1">
-                <h2 className="section-title mb-5">
+            <div className="md:flex md:gap-5">
+              <div className="flex-1">
+                <motion.h2
+                  variants={fadeIn("right", 0.2)}
+                  initial="hidden"
+                  animate="show"
+                  exit="hidden"
+                  className="text-center section-title mb-5 md:text-left"
+                >
                   <span className="text-primary">My</span> Experience
-                </h2>
+                </motion.h2>
                 {ExperienceList.map((item) => {
                   return (
                     <ResumeItem
@@ -93,11 +104,17 @@ const Resume = () => {
                   );
                 })}
               </div>
-              <div className="border-l-[1px]"></div>
-              <div className="my-education flex-1">
-                <h2 className="section-title mb-5">
+              <div className="invisible md:visible border-l-[1px]"></div>
+              <div className="flex-1">
+                <motion.h2
+                  variants={fadeIn("left", 0.2)}
+                  initial="hidden"
+                  animate="show"
+                  exit="hidden"
+                  className="text-center section-title mb-5 md:text-left"
+                >
                   <span className="text-primary">My</span> Education
-                </h2>
+                </motion.h2>
                 {EducationList.map((item) => {
                   return (
                     <EducationItem
@@ -114,8 +131,12 @@ const Resume = () => {
             </div>
           </div>
         </div>
-        <div className="image-container flex-1 bg-slate-600">
-          {/* <Image src={img} alt="" className="object-cover h-full" /> */}
+        <div className="lg:fixed lg:right-0 lg:top-0 lg:w-1/2 h-full lg:h-screen lg:flex-1 bg-slate-600">
+          <Image
+            src={img}
+            alt=""
+            className="object-cover w-full h-auto aspect-video lg:h-full"
+          />
         </div>
       </div>
     </>

@@ -4,8 +4,6 @@ import AnimatedNumber from "@/components/AnimatedNumber/AnimatedNumber";
 import ProjectContainer from "@/components/ProjectContainer/ProjectContainer";
 import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 import React, { useEffect, useState } from "react";
-import { PiFire } from "react-icons/pi";
-import { SlPeople, SlCup } from "react-icons/sl";
 import imiu from "../../../public/assets/imiu.png";
 import safebuilding from "../../../public/assets/safebuilding.png";
 import safebuilding1 from "../../../public/assets/safebuilding1.png";
@@ -16,9 +14,10 @@ import thehstore from "../../../public/assets/thehstore.png";
 
 import hmovie from "../../../public/assets/hmovie.png";
 import { AnimatePresence, motion } from "framer-motion";
-import { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import ProjectModal from "@/components/ProjectModal/ProjectModal";
 import ProjectNavBar from "@/components/ProjectNavBar/ProjectNavBar";
+import { fadeIn } from "@/utils/variants";
 
 interface Detail {
   detailItem: string;
@@ -229,27 +228,27 @@ const Portfolio = () => {
       <TransitionEffect />
       <ProjectModal item={selectedItem} setSelectedItem={removeItem} />
 
-      <div className="flex w-full h-full">
-        <div className="content flex-1 pt-28 py-20 overflow-y-scroll no-scrollbar">
-          <div className="relative text-center px-5 py-12">
-            <div className="font-bold text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
+      <div className="lg:relative lg:h-full flex flex-col-reverse">
+        <div className="pt-10 py-20 lg:w-1/2 lg:pt-28 lg:py-20">
+          <div className="relative text-center px-5 py-10">
+            <div className="font-bold text-[4rem] lg:text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
               portfolio
             </div>
             <div className="text-xl mt-10 flex justify-center gap-4">
-              <div className="w-48 flex flex-col gap-1 text-white cursor-pointer ">
-                <div className="font-bold text-5xl text-white ">
-                  <AnimatedNumber value={15} />+
-                </div>
-                <div className="text-base tracking-wide text-slate-200">
-                  Projects Completed
-                </div>
-              </div>
               <div className="w-48 flex flex-col gap-1 cursor-pointer ">
                 <div className="font-bold text-5xl text-white ">
                   <AnimatedNumber value={1} />+
                 </div>
                 <div className="text-base tracking-wide text-slate-200">
                   Satisfied clients
+                </div>
+              </div>
+              <div className="w-48 flex flex-col gap-1 text-white cursor-pointer ">
+                <div className="font-bold text-5xl text-white ">
+                  <AnimatedNumber value={15} />+
+                </div>
+                <div className="text-base tracking-wide text-slate-200">
+                  Projects Completed
                 </div>
               </div>
               <div className="w-48 flex flex-col gap-1  cursor-pointer">
@@ -263,10 +262,22 @@ const Portfolio = () => {
             </div>
           </div>
           <div className="px-5">
-            <h2 className="section-title mb-5">
+            <motion.h2
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="text-center section-title mb-5 md:text-left"
+            >
               <span className="text-primary">My</span> Portfolio
-            </h2>
-            <div className="flex gap-5 justify-center font-semibold mb-5">
+            </motion.h2>
+            <motion.div
+              variants={fadeIn("right", 0.2)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
+              className="flex gap-3 text-sm md:text-base md:gap-5 justify-center font-semibold mb-5"
+            >
               {ProjectNavList.map((item) => (
                 <ProjectNavBar
                   key={item.id}
@@ -275,8 +286,12 @@ const Portfolio = () => {
                   setSelectedType={setSelectedType}
                 />
               ))}
-            </div>
+            </motion.div>
             <motion.div
+              variants={fadeIn("up", 0.2)}
+              initial="hidden"
+              animate="show"
+              exit="hidden"
               layout
               className="flex justify-start items-stretch flex-wrap ml-2 my-0"
             >
@@ -294,8 +309,12 @@ const Portfolio = () => {
             </motion.div>
           </div>
         </div>
-        <div className="image-container flex-1 bg-slate-600">
-          {/* <Image src={img} alt="" className="object-cover h-full" /> */}
+        <div className="lg:fixed lg:right-0 lg:top-0 lg:w-1/2 h-full lg:h-screen lg:flex-1 bg-slate-600">
+          <Image
+            src={hmovie}
+            alt=""
+            className="object-cover w-full h-auto aspect-video lg:h-full"
+          />
         </div>
       </div>
     </>

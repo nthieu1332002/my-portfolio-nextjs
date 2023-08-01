@@ -4,6 +4,7 @@ import { AiOutlineHtml5, AiOutlineAntDesign } from "react-icons/ai";
 import { FaCss3, FaSass, FaBootstrap, FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { BiGitBranch } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 import {
   SiNextdotjs,
@@ -11,10 +12,11 @@ import {
   SiTypescript,
   SiFirebase,
   SiMui,
-  SiFlutter
+  SiFlutter,
 } from "react-icons/si";
 
 import SkillContainer from "../SkillContainer/SkillContainer";
+import { fadeIn } from "@/utils/variants";
 
 export interface Skill {
   name: string;
@@ -100,14 +102,26 @@ const Skills = () => {
       name: "Firebase",
       icon: <SiFirebase size="70" />,
       color: "#b25127",
-    }
+    },
   ];
   return (
     <div className="my-skills px-5">
-      <h2 className="section-title mb-5">
+      <motion.h2
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="text-center section-title mb-5 md:text-left"
+      >
         <span className="text-primary">Technical</span> Skills
-      </h2>
-      <div className="skills-list flex gap-7 flex-wrap mb-5">
+      </motion.h2>
+      <motion.div
+        variants={fadeIn("up", 0.25)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="flex justify-stretch gap-5 flex-wrap mb-5"
+      >
         {SkillsList.map((item) => {
           return (
             <SkillContainer
@@ -118,11 +132,17 @@ const Skills = () => {
             />
           );
         })}
-      </div>
-      <h2 className="section-title mb-5">
+      </motion.div>
+      <motion.h2
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="text-center section-title mb-5 md:text-left"
+      >
         <span className="text-primary">Other</span> Skills
-      </h2>
-      <div className="skills-list flex gap-7 flex-wrap">
+      </motion.h2>
+      <div className="flex justify-stretch gap-5 flex-wrap mb-5">
         {OtherSkillsList.map((item) => {
           return (
             <SkillContainer

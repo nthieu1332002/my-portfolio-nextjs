@@ -16,12 +16,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={mont.className}>
-      <body>
-          <div className="flex">
-            <SideBar />
-            <div className="bg-gray-800 w-screen h-screen">{children}</div>
-          </div>
-
+      <body className="no-scrollbar">
+        <div className="relative">
+          <SideBar />
+          <div className="bg-gray-800 max-w-screen h-full">{children}</div>
+        </div>
       </body>
     </html>
   );
