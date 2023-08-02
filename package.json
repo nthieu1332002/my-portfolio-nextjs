@@ -26,6 +26,7 @@
     "react-icons": "^4.10.1",
     "react-simple-typewriter": "^5.0.1",
     "react-tsparticles": "^2.11.0",
+    "sharp": "^0.32.4",
     "tsparticles": "^2.11.0",
     "typescript": "5.1.6"
   },

@@ -9,7 +9,7 @@ import safebuilding from "../../../public/assets/safebuilding.png";
 import safebuilding1 from "../../../public/assets/safebuilding1.png";
 import ketchat from "../../../public/assets/ketchat.png";
 import portfolioold from "../../../public/assets/portfolioold.png";
-import me1 from "../../../public/assets/me1.png";
+import me1 from "../../../public/assets/me1.avif";
 import thehstore from "../../../public/assets/thehstore.png";
 
 import hmovie from "../../../public/assets/hmovie.png";

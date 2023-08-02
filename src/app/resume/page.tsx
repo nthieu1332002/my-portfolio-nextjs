@@ -5,7 +5,7 @@ import ResumeItem from "@/components/ResumeItem/ResumeItem";
 import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 import { fadeIn } from "@/utils/variants";
 import { motion } from "framer-motion";
-import img from "../../../public/assets/me.jpg";
+import img from "../../../public/assets/me.avif";
 
 import Image from "next/image";
 import React from "react";

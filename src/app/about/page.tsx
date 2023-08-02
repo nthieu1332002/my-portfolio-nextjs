@@ -7,7 +7,7 @@ import { BsGithub } from "react-icons/bs";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { motion } from "framer-motion";
 
-import img from "../../../public/assets/profile.jpg";
+import img from "../../../public/assets/profile.avif";
 import Image from "next/image";
 import CustomButton from "@/components/CustomButton/CustomButton";
 import Skills from "@/components/Skills/Skills";
