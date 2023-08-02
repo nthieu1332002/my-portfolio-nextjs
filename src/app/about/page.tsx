@@ -50,11 +50,19 @@ const About = () => {
               className="flex gap-3 justify-center mt-8 lg:mt-4"
             >
               <CustomButton
+                link="/CV-NguyenTrungHieu-Frontend-Developer.pdf"
                 icon={<PiDownloadSimpleBold size={20} />}
                 text="Download CV"
+                download={true}
               />
-              <CustomButton icon={<BsGithub size={20} />} />
-              <CustomButton icon={<AiOutlineFacebook size={20} />} />
+              <CustomButton
+                link="https://github.com/nthieu1332002"
+                icon={<BsGithub size={20} />}
+              />
+              <CustomButton
+                link="https://www.facebook.com/MediumHealing13/"
+                icon={<AiOutlineFacebook size={20} />}
+              />
             </motion.div>
           </div>
           <Skills />

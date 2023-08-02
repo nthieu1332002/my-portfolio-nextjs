@@ -85,8 +85,8 @@ const Contact = () => {
               exit="hidden"
               className="flex gap-3 justify-center mt-4"
             >
-              <CustomButton icon={<AiOutlineFacebook size={20} />} />
-              <CustomButton icon={<BsGithub size={20} />} />
+              <CustomButton link="https://www.facebook.com/MediumHealing13/" icon={<AiOutlineFacebook size={20} />} />
+              <CustomButton link="https://github.com/nthieu1332002" icon={<BsGithub size={20} />} />
             </motion.div>
           </div>
           <motion.div

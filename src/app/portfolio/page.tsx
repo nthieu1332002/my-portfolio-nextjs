@@ -73,7 +73,7 @@ const ProjectList: Project[] = [
       },
       {
         detailItem:
-          "My responsibility: Leader - take the main responsibility in team, manage team's work progress, plan to design database, features, requirements, UI,... Anh develop features's application.",
+          "My responsibility: Leader - take the main responsibility in team, manage team's work progress, plan to design database, features, requirements, UI,... And develop features's application.",
       },
       {
         detailItem:

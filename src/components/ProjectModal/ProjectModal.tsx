@@ -1,7 +1,6 @@
 import { Project } from "@/app/portfolio/page";
 import Image from "next/image";
 import React from "react";
-import CustomButton from "../CustomButton/CustomButton";
 
 interface ProjectModalProps {
   item?: Project;
