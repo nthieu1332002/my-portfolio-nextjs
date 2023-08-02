@@ -5,7 +5,7 @@ import ResumeItem from "@/components/ResumeItem/ResumeItem";
 import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 import { fadeIn } from "@/utils/variants";
 import { motion } from "framer-motion";
-import img from "../../../public/assets/imiu.png";
+import img from "../../../public/assets/me.jpg";
 
 import Image from "next/image";
 import React from "react";
@@ -135,7 +135,7 @@ const Resume = () => {
           <Image
             src={img}
             alt=""
-            className="object-cover w-full h-auto aspect-video lg:h-full"
+            className="object-cover w-full h-auto aspect-video lg:h-full rounded-lg"
           />
         </div>
       </div>

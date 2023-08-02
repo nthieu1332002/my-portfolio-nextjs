@@ -9,7 +9,7 @@ import safebuilding from "../../../public/assets/safebuilding.png";
 import safebuilding1 from "../../../public/assets/safebuilding1.png";
 import ketchat from "../../../public/assets/ketchat.png";
 import portfolioold from "../../../public/assets/portfolioold.png";
-import portfolioold1 from "../../../public/assets/portfolioold1.png";
+import me1 from "../../../public/assets/me1.png";
 import thehstore from "../../../public/assets/thehstore.png";
 
 import hmovie from "../../../public/assets/hmovie.png";
@@ -311,7 +311,7 @@ const Portfolio = () => {
         </div>
         <div className="lg:fixed lg:right-0 lg:top-0 lg:w-1/2 h-full lg:h-screen lg:flex-1 bg-slate-600">
           <Image
-            src={hmovie}
+            src={me1}
             alt=""
             className="object-cover w-full h-auto aspect-video lg:h-full"
           />
