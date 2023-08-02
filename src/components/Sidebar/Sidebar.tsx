@@ -42,7 +42,7 @@ const Sidebar = () => {
             className={`relative text-2xl md:text-lg cursor-pointer  ${
               router === menu.link
                 ? "text-primary hover:text-primary"
-                : "text-white-primary hover:text-white md:tooltip"
+                : "text-white-primary hover:text-white tooltip"
             }`}
           >
             {menu.icon}

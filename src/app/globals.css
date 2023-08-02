@@ -15,7 +15,14 @@
     transform: translateX(-75%) translateY(0%) scale(var(--scale));
     transition: 0.25s transform;
     transform-origin: right center;
+    display: none;
 }
+
+@media (min-width: 720px) {
+    .tooltip::after {
+      display: inline-block;
+    }
+  }
 
 .tooltip::after {
     content: attr(data-tooltip);
