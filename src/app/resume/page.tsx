@@ -135,6 +135,10 @@ const Resume = () => {
           <Image
             src={img}
             alt=""
+            sizes="(max-width: 50px) 2vw, (max-width: 425px) 50vw, 75vw"
+            quality={60}
+            placeholder="blur"
+            priority
             className="object-cover w-full h-auto aspect-video lg:h-full rounded-lg"
           />
         </div>

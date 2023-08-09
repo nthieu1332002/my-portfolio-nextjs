@@ -142,7 +142,13 @@ const Skills = () => {
       >
         <span className="text-primary">Other</span> Skills
       </motion.h2>
-      <div className="flex justify-stretch gap-5 flex-wrap mb-5">
+      <motion.div
+        variants={fadeIn("up", 0.25)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="flex justify-stretch gap-5 flex-wrap mb-5"
+      >
         {OtherSkillsList.map((item) => {
           return (
             <SkillContainer
@@ -153,7 +159,7 @@ const Skills = () => {
             />
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };

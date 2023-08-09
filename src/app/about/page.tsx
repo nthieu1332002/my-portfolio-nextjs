@@ -70,7 +70,13 @@ const About = () => {
         <div className="lg:fixed lg:right-0 lg:top-0 lg:w-1/2 h-full lg:h-screen lg:flex-1 bg-slate-600">
           <Image
             src={img}
-            alt=""
+            alt="img1"
+            width={100}
+            height={100}
+            sizes="(max-width: 425px) 50vw, 75vw"
+            quality={60}
+            placeholder="blur"
+            priority
             className="object-cover w-full h-auto aspect-video lg:h-full"
           />
         </div>
