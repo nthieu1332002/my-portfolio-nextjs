@@ -78,9 +78,9 @@ const ResumeContent = () => {
       <div className="lg:relative lg:min-h-screen lg:h-full flex flex-col-reverse">
         <div className="pt-10 py-20 lg:w-1/2 lg:pt-28 lg:py-20">
           <div className="relative px-5 py-12">
-            <div className="font-bold text-[4rem] lg:text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
+            <h1 className="font-bold text-[4rem] lg:text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
               resume
-            </div>
+            </h1>
             <div className="md:flex md:gap-5">
               <div className="flex-1">
                 <motion.h2

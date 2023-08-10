@@ -57,9 +57,9 @@ const ContactContent = () => {
         <div className="flex justify-center w-full h-full">
           <div className="content pt-28 py-20 overflow-y-scroll no-scrollbar">
             <div className="relative text-center px-5 py-12">
-              <div className="font-bold text-[4rem] lg:text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
+              <h1 className="font-bold text-[4rem] lg:text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
                 contact
-              </div>
+              </h1>
               <motion.div
                 variants={fadeIn("down", 0.3)}
                 initial="hidden"
