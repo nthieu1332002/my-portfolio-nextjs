@@ -1,7 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import { Project } from "@/app/portfolio/page";
+
 import { motion } from "framer-motion";
+import { Project } from "../PortfolioContent/PortfolioContent";
 
 interface ProjectContainerProps {
   setSelectedItem: (item: Project) => void;

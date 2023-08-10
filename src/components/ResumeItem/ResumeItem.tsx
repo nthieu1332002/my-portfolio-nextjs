@@ -1,7 +1,8 @@
 import React from 'react'
-import {Experience} from "../../app/resume/page"
+
 import Link from 'next/link'
 import { motion } from "framer-motion";
+import { Experience } from '../ResumeContent/ResumeContent';
 
 
 const ResumeItem = ({name, time, company,link , description}: Experience) => {
