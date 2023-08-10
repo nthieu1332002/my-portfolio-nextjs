@@ -25,6 +25,10 @@ const ProjectModal = ({ item, setSelectedItem }: ProjectModalProps) => {
           <Image
             src={item.img}
             alt={item.name}
+            sizes="(max-width: 50px) 2vw, (max-width: 425px) 50vw, 75vw"
+            quality={60}
+            placeholder="blur"
+            priority
             className="rounded-lg object-contain"
           />
           <div className="text-sm mt-5">{item.member}</div>

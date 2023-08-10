@@ -18,7 +18,19 @@ import Image, { StaticImageData } from "next/image";
 import ProjectModal from "@/components/ProjectModal/ProjectModal";
 import ProjectNavBar from "@/components/ProjectNavBar/ProjectNavBar";
 import { fadeIn } from "@/utils/variants";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "My portfolio",
+  description:
+    "Discover a collection of my frontend projects, showcasing creativity, technical expertise, and attention to detail. From responsive websites, interactive prototypes, to sleek user interfaces, each project demonstrates my ability to solve complex problems and deliver exceptional user experiences.",
+    alternates: {
+      canonical: '/portfolio',
+      languages: {
+        'en': '/en/portfolio',
+      },
+    },
+};
 interface Detail {
   detailItem: string;
 }
@@ -228,7 +240,7 @@ const Portfolio = () => {
       <TransitionEffect />
       <ProjectModal item={selectedItem} setSelectedItem={removeItem} />
 
-      <div className="lg:relative lg:h-full flex flex-col-reverse">
+      <div className="lg:relative lg:min-h-screen lg:h-full flex flex-col-reverse">
         <div className="pt-10 py-20 lg:w-1/2 lg:pt-28 lg:py-20">
           <div className="relative text-center px-5 py-10">
             <div className="font-bold text-[4rem] lg:text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
@@ -312,8 +324,14 @@ const Portfolio = () => {
         <div className="lg:fixed lg:right-0 lg:top-0 lg:w-1/2 h-full lg:h-screen lg:flex-1 bg-slate-600">
           <Image
             src={me1}
-            alt=""
-            className="object-cover w-full h-auto aspect-video lg:h-full"
+            alt="portfolio"
+            height={100}
+            width={100}
+            sizes="(max-width: 50px) 2vw, (max-width: 425px) 50vw, 75vw"
+            quality={10}
+            placeholder="blur"
+            priority
+            className="object-cover w-full h-auto aspect-video lg:h-full rounded-lg"
           />
         </div>
       </div>

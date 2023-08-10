@@ -12,6 +12,19 @@ import Image from "next/image";
 import CustomButton from "@/components/CustomButton/CustomButton";
 import Skills from "@/components/Skills/Skills";
 import { fadeIn } from "@/utils/variants";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About me",
+  description:
+    "I'm Trung Hieu, a frontend developer with years of experience. Skilled in HTML, CSS, JavaScript, and various frameworks, I creates visually appealing and user-friendly websites. Learn more about my skills.",
+    alternates: {
+      canonical: '/about',
+      languages: {
+        'en': '/en/about',
+      },
+    },
+};
 
 const About = () => {
   return (
@@ -70,7 +83,13 @@ const About = () => {
         <div className="lg:fixed lg:right-0 lg:top-0 lg:w-1/2 h-full lg:h-screen lg:flex-1 bg-slate-600">
           <Image
             src={img}
-            alt=""
+            alt="img1"
+            width={100}
+            height={100}
+            sizes="(max-width: 425px) 50vw, 75vw"
+            quality={60}
+            placeholder="blur"
+            priority
             className="object-cover w-full h-auto aspect-video lg:h-full"
           />
         </div>

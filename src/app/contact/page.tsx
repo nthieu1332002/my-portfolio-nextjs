@@ -9,6 +9,19 @@ import emailjs from "@emailjs/browser";
 import { fadeIn } from "@/utils/variants";
 import toast, { Toaster } from "react-hot-toast";
 import ReCAPTCHA from "react-google-recaptcha";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Keep in touch",
+  description:
+    "Very happy to interact with you. Feel free to contact me anytime!",
+  alternates: {
+    canonical: "/contact",
+    languages: {
+      en: "/en/contact",
+    },
+  },
+};
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -85,8 +98,14 @@ const Contact = () => {
               exit="hidden"
               className="flex gap-3 justify-center mt-4"
             >
-              <CustomButton link="https://www.facebook.com/MediumHealing13/" icon={<AiOutlineFacebook size={20} />} />
-              <CustomButton link="https://github.com/nthieu1332002" icon={<BsGithub size={20} />} />
+              <CustomButton
+                link="https://www.facebook.com/MediumHealing13/"
+                icon={<AiOutlineFacebook size={20} />}
+              />
+              <CustomButton
+                link="https://github.com/nthieu1332002"
+                icon={<BsGithub size={20} />}
+              />
             </motion.div>
           </div>
           <motion.div
@@ -134,7 +153,9 @@ const Contact = () => {
                 required
               />
               <ReCAPTCHA
-                sitekey={process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_SITE_KEY as string}
+                sitekey={
+                  process.env.NEXT_PUBLIC_GOOGLE_RECAPTCHA_SITE_KEY as string
+                }
                 onChange={onChange}
               />
               <button
