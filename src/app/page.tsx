@@ -1,11 +1,9 @@
-"use client"
-
 import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
-import { Typewriter } from "react-simple-typewriter";
 import AnimatedText from "@/components/AnimatedText/AnimatedText";
 import wall from "../../public/assets/wall.avif";
 import Image from "next/image";
 import { Metadata } from "next";
+import TypewriterHomepage from "@/components/TypewriterHomepage/TypewriterHomepage";
 
 export const metadata: Metadata = {
   title: "Homepage",
@@ -57,19 +55,7 @@ export default function Home() {
               >
                 I am a{" "}
                 <span style={{ color: "white", fontWeight: "bold" }}>
-                  <Typewriter
-                    words={[
-                      "Software Engineer.",
-                      "Front-end Developer.",
-                      "Mobile Developer.",
-                    ]}
-                    loop={5}
-                    cursor
-                    cursorStyle="_"
-                    typeSpeed={70}
-                    deleteSpeed={50}
-                    delaySpeed={1000}
-                  />
+                  <TypewriterHomepage />
                 </span>
               </h1>
             </div>

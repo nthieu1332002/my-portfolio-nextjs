@@ -1,6 +1,7 @@
-import { Project } from "@/app/portfolio/page";
+
 import Image from "next/image";
 import React from "react";
+import { Project } from "../PortfolioContent/PortfolioContent";
 
 interface ProjectModalProps {
   item?: Project;
@@ -21,7 +22,7 @@ const ProjectModal = ({ item, setSelectedItem }: ProjectModalProps) => {
           x
         </div>
 
-        <div className="mx-auto my-5 max-w-[650px] bg-white p-6 rounded-lg">
+        <div className="mx-auto my-5 max-w-[650px] text-black bg-white p-6 rounded-lg">
           <Image
             src={item.img}
             alt={item.name}
