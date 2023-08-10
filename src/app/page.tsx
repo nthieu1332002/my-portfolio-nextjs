@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import TypewriterHomepage from "@/components/TypewriterHomepage/TypewriterHomepage";
 
 export const metadata: Metadata = {
-  title: "Homepage",
+  title: "Welcome to My Portfolio | Nguyen Trung Hieu | Nextjs | SEO",
   description:
     "Welcome to my portfolio! Showcase of my expertise in web skills. Browse through my projects, demonstrating creativity, user experience (UX), and clean code. Explore my skills in creating intuitive user interfaces (UI) and optimizing web performance. Get in touch for potential collaborations or employment opportunities.",
   alternates: {

@@ -231,9 +231,9 @@ const PortfolioContent = () => {
         <div className="lg:relative lg:min-h-screen lg:h-full flex flex-col-reverse">
           <div className="pt-10 py-20 lg:w-1/2 lg:pt-28 lg:py-20">
             <div className="relative text-center px-5 py-10">
-              <div className="font-bold text-[4rem] lg:text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
+              <h1 className="font-bold text-[4rem] lg:text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
                 portfolio
-              </div>
+              </h1>
               <div className="text-xl mt-10 flex justify-center gap-4">
                 <div className="w-48 flex flex-col gap-1 cursor-pointer ">
                   <div className="font-bold text-5xl text-white ">
