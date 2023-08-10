@@ -113,6 +113,24 @@ const Skills = () => {
         exit="hidden"
         className="text-center section-title mb-5 md:text-left"
       >
+        <span className="text-primary">Soft</span> Skills
+      </motion.h2>
+      <motion.p
+        variants={fadeIn("right", 0.25)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="mb-5 text-center sm:text-left sm:ml-3 sm:text-lg"
+      >
+        Team Work, Communication, Leadership, Collaboration.
+      </motion.p>
+      <motion.h2
+        variants={fadeIn("right", 0.2)}
+        initial="hidden"
+        animate="show"
+        exit="hidden"
+        className="text-center section-title mb-5 md:text-left"
+      >
         <span className="text-primary">Technical</span> Skills
       </motion.h2>
       <motion.div
@@ -140,7 +158,7 @@ const Skills = () => {
         exit="hidden"
         className="text-center section-title mb-5 md:text-left"
       >
-        <span className="text-primary">Other</span> Skills
+        <span className="text-primary">Others</span>
       </motion.h2>
       <motion.div
         variants={fadeIn("up", 0.25)}
