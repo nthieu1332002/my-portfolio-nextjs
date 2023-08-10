@@ -1,7 +1,8 @@
-import { Education } from "@/app/resume/page";
+
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
+import { Education } from "../ResumeContent/ResumeContent";
 
 const EducationItem = ({name, time, title, link , description}: Education) => {
   const quote = {
