@@ -4,6 +4,19 @@ import { Typewriter } from "react-simple-typewriter";
 import AnimatedText from "@/components/AnimatedText/AnimatedText";
 import wall from "../../public/assets/wall.avif";
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Homepage",
+  description:
+    "Welcome to my portfolio! Showcase of my expertise in web skills. Browse through my projects, demonstrating creativity, user experience (UX), and clean code. Explore my skills in creating intuitive user interfaces (UI) and optimizing web performance. Get in touch for potential collaborations or employment opportunities.",
+  alternates: {
+    canonical: "/",
+    languages: {
+      en: "/en",
+    },
+  },
+};
 
 export default function Home() {
   return (
@@ -16,6 +29,7 @@ export default function Home() {
             alt="Background Image"
             width={100}
             height={100}
+            quality={100}
             sizes="(max-width: 50px) 2vw, (max-width: 425px) 50vw, 75vw"
             placeholder="blur"
             priority

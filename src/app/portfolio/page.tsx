@@ -18,7 +18,19 @@ import Image, { StaticImageData } from "next/image";
 import ProjectModal from "@/components/ProjectModal/ProjectModal";
 import ProjectNavBar from "@/components/ProjectNavBar/ProjectNavBar";
 import { fadeIn } from "@/utils/variants";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "My portfolio",
+  description:
+    "Discover a collection of my frontend projects, showcasing creativity, technical expertise, and attention to detail. From responsive websites, interactive prototypes, to sleek user interfaces, each project demonstrates my ability to solve complex problems and deliver exceptional user experiences.",
+    alternates: {
+      canonical: '/portfolio',
+      languages: {
+        'en': '/en/portfolio',
+      },
+    },
+};
 interface Detail {
   detailItem: string;
 }

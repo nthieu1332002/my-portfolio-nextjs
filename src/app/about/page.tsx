@@ -12,6 +12,19 @@ import Image from "next/image";
 import CustomButton from "@/components/CustomButton/CustomButton";
 import Skills from "@/components/Skills/Skills";
 import { fadeIn } from "@/utils/variants";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About me",
+  description:
+    "I'm Trung Hieu, a frontend developer with years of experience. Skilled in HTML, CSS, JavaScript, and various frameworks, I creates visually appealing and user-friendly websites. Learn more about my skills.",
+    alternates: {
+      canonical: '/about',
+      languages: {
+        'en': '/en/about',
+      },
+    },
+};
 
 const About = () => {
   return (
