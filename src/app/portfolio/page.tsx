@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import AnimatedNumber from "@/components/AnimatedNumber/AnimatedNumber";
 import ProjectContainer from "@/components/ProjectContainer/ProjectContainer";

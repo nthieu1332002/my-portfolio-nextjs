@@ -1,4 +1,5 @@
-"use client";
+"use client"
+
 import CustomButton from "@/components/CustomButton/CustomButton";
 import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 import { BsGithub } from "react-icons/bs";

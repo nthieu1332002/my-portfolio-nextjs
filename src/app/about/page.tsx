@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 import React from "react";

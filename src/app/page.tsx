@@ -1,4 +1,5 @@
-"use client";
+"use client"
+
 import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 import { Typewriter } from "react-simple-typewriter";
 import AnimatedText from "@/components/AnimatedText/AnimatedText";

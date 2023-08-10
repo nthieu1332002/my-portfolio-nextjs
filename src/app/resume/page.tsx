@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import EducationItem from "@/components/EducationItem/EducationItem";
 import ResumeItem from "@/components/ResumeItem/ResumeItem";
