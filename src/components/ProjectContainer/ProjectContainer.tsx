@@ -20,7 +20,7 @@ const ProjectContainer = ({ item, setSelectedItem }: ProjectContainerProps) => {
         exit={{ opacity: 0, scale: 0 }}
         layout
         onClick={() => setSelectedItem(item)}
-        className="group relative lg:w-lg_size md:w-full lg:h-60 md:h-72 sm:h-60 mt-3 lg:mx-2 md:mx-0 overflow-hidden bg-slate-600 rounded-lg cursor-pointer hover:drop-shadow-lg"
+        className="group relative lg:w-lg_size sm:w-[48%] w-full lg:h-60 md:h-72 sm:h-60 mt-3 overflow-hidden bg-slate-600 rounded-lg cursor-pointer hover:drop-shadow-lg"
       >
         <Image
           src={item.img}

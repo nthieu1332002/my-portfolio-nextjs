@@ -120,7 +120,7 @@ const Skills = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="mb-5 text-center sm:text-left sm:ml-3 sm:text-lg"
+        className="mb-5 text-center text-white sm:text-left sm:ml-3 sm:text-lg"
       >
         Team Work, Communication, Leadership, Collaboration.
       </motion.p>

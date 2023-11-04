@@ -5,8 +5,9 @@ import ProjectContainer from "@/components/ProjectContainer/ProjectContainer";
 import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 import React, { useEffect, useState } from "react";
 import imiu from "../../../public/assets/imiu.png";
+import discord from "../../../public/assets/discord.png";
+
 import safebuilding from "../../../public/assets/safebuilding.png";
-import safebuilding1 from "../../../public/assets/safebuilding1.png";
 import ketchat from "../../../public/assets/ketchat.png";
 import portfolioold from "../../../public/assets/portfolioold.png";
 import me1 from "../../../public/assets/me1.avif";
@@ -59,6 +60,42 @@ interface Detail {
   ];
   
   const ProjectList: Project[] = [
+    {
+      id: 0,
+      name: "Discord Clone",
+      member: "Individual project",
+      img: discord,
+      type: "Application, API, UI Design",
+      time: "Aug 2023 - Oct 2023",
+      detail: [
+        {
+          detailItem:
+            "Fullstack Nextjs, Prisma application that clone Discord's features and UI.",
+        },
+        {
+          detailItem:
+            "Authentication with Google, Github using Clerk.",
+        },
+        {
+          detailItem:
+            "Images management with Cloudinary.",
+        },
+        {
+          detailItem:
+            "Realtime messages, online users with Pusher and Socket.io.",
+        },
+        {
+          detailItem:
+            "Video call, voice call with Livekit.io.",
+        },
+        {
+          detailItem:
+            "Technologies: NextJs, Prisma, Clerk, TailwindCss, Zustand, Shadcn, Socket.io, Pusher, LiveKit.io, Cloudinary...",
+        },
+      ],
+      repository: "https://github.com/nthieu1332002/discord-clone",
+      demo: "https://discord-clone-nthieu.vercel.app/",
+    },
     {
       id: 1,
       name: "IMIU Web",
@@ -202,6 +239,7 @@ interface Detail {
       repository: "https://github.com/nthieu1332002/The-H-Store",
       demo: "https://the-h-store.vercel.app/",
     },
+    
   ];
 
 const PortfolioContent = () => {
@@ -293,7 +331,7 @@ const PortfolioContent = () => {
                 animate="show"
                 exit="hidden"
                 layout
-                className="flex justify-start items-stretch flex-wrap ml-2 my-0"
+                className="flex lg:justify-start md:justify-center items-stretch sm:gap-3 lg:gap-4 flex-wrap ml-2 my-0"
               >
                 <AnimatePresence>
                   {filteredList.map((item) => {
