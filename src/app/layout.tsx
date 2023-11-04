@@ -33,7 +33,6 @@ export const metadata: Metadata = {
     { name: "Nguyen Trung Hieu" },
     { name: "Nguyen Trung Hieu", url: "https://github.com/nthieu1332002" },
   ],
-  colorScheme: "dark",
   creator: "Nguyen Trung Hieu - nthieu",
   publisher: "Nguyen Trung Hieu - nthieu",
   formatDetection: {
