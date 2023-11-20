@@ -70,11 +70,11 @@ const ContactContent = () => {
                 <p>
                   Sent me an{" "}
                   <a href="mailto:nthieu1332002@gmail.com">
-                    <strong className="text-primary underline">Email</strong>
+                    <strong className="text-primary-color underline">Email</strong>
                   </a>
                 </p>
                 <p>
-                  Or <strong className="text-primary"> say hi👋</strong> via my
+                  Or <strong className="text-primary-color"> say hi👋</strong> via my
                   social networks
                 </p>
               </motion.div>
@@ -108,7 +108,7 @@ const ContactContent = () => {
                 onSubmit={sendEmail}
               >
                 <h2 className="section-title my-2 text-center text-2xl">
-                  <span className="text-primary">Contact</span> Form
+                  <span className="text-primary-color">Contact</span> Form
                 </h2>
                 <div className="flex gap-x-3 w-full">
                   <input
@@ -148,7 +148,7 @@ const ContactContent = () => {
                 <button
                   type="submit"
                   disabled={loading || !verified}
-                  className="btn flex rounded-full max-w-[200px] font-bold p-2 px-5 text-white bg-button-bg hover:text-primary hover:-translate-y-1 hover:drop-shadow-lg duration-500"
+                  className="btn flex rounded-full max-w-[200px] font-bold p-2 px-5 text-white bg-button-bg hover:text-primary-color hover:-translate-y-1 hover:drop-shadow-lg duration-500"
                 >
                   {loading && (
                     <svg

@@ -31,13 +31,13 @@ const AboutContent = () => {
               className="px-2 text-lg leading-8 lg:px-4 lg:text-xl lg:leading-9 text-white"
             >
               <p>
-                <strong className="text-primary">
+                <strong className="text-primary-color">
                   Hello, I&apos;m Trung Hieu.{" "}
                 </strong>
                 I am a junior Web Developer. I enjoy to create beautiful things
                 that live on the internet. I have experience in website building
                 and customization. I am familiar with{" "}
-                <strong className="text-primary">
+                <strong className="text-primary-color">
                   Reactjs, Nextjs, TypeScript, Scss, Redux,...
                 </strong>
               </p>

@@ -307,7 +307,7 @@ const PortfolioContent = () => {
                 exit="hidden"
                 className="text-center section-title mb-5 md:text-left"
               >
-                <span className="text-primary">My</span> Portfolio
+                <span className="text-primary-color">My</span> Portfolio
               </motion.h2>
               <motion.div
                 variants={fadeIn("right", 0.2)}

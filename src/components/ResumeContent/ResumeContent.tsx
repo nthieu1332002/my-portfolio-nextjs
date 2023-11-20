@@ -90,7 +90,7 @@ const ResumeContent = () => {
                   exit="hidden"
                   className="text-center section-title mb-5 md:text-left"
                 >
-                  <span className="text-primary">My</span> Experience
+                  <span className="text-primary-color">My</span> Experience
                 </motion.h2>
                 {ExperienceList.map((item) => {
                   return (
@@ -114,7 +114,7 @@ const ResumeContent = () => {
                   exit="hidden"
                   className="text-center section-title mb-5 md:text-left"
                 >
-                  <span className="text-primary">My</span> Education
+                  <span className="text-primary-color">My</span> Education
                 </motion.h2>
                 {EducationList.map((item) => {
                   return (

@@ -63,7 +63,7 @@ const ProjectModal = ({ item, setSelectedItem }: ProjectModalProps) => {
                     return (
                       <li
                         key={index}
-                        className="before:content-['\2022'] before:text-primary before:font-bold before:text-2xl before:inline-block before:w-[1em]"
+                        className="before:content-['\2022'] before:text-primary-color before:font-bold before:text-2xl before:inline-block before:w-[1em]"
                       >
                         {item.detailItem}
                       </li>
@@ -76,7 +76,7 @@ const ProjectModal = ({ item, setSelectedItem }: ProjectModalProps) => {
                   target="_blank"
                   href={item.repository}
                   rel="noopener noreferrer"
-                  className="text-sm font-bold p-3 px-4 rounded-full text-primary bg-white  hover:-translate-y-1 hover:drop-shadow-lg duration-300"
+                  className="text-sm font-bold p-3 px-4 rounded-full text-primary-color bg-white  hover:-translate-y-1 hover:drop-shadow-lg duration-300"
                 >
                   Repository
                 </a>
@@ -84,7 +84,7 @@ const ProjectModal = ({ item, setSelectedItem }: ProjectModalProps) => {
                   target="_blank"
                   href={item.demo}
                   rel="noopener noreferrer"
-                  className="text-sm font-bold p-3 px-4 rounded-full text-white bg-primary  hover:-translate-y-1 hover:drop-shadow-lg duration-300"
+                  className="text-sm font-bold p-3 px-4 rounded-full text-white bg-primary-color  hover:-translate-y-1 hover:drop-shadow-lg duration-300"
                 >
                   View on website
                 </a>

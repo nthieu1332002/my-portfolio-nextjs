@@ -41,7 +41,7 @@ const Sidebar = () => {
             href={menu.link}
             className={`relative text-2xl md:text-lg cursor-pointer  ${
               router === menu.link
-                ? "text-primary hover:text-primary"
+                ? "text-primary-color hover:text-primary-color"
                 : "text-white-primary hover:text-white tooltip"
             }`}
           >
