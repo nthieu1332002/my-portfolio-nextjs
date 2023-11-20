@@ -26,7 +26,7 @@ const EducationItem = ({name, time, title, link , description}: Education) => {
         <Link
           href={link}
           target="_blank"
-          className="font-semibold text-base text-primary"
+          className="font-semibold text-base text-primary-color"
         >
           {title}
         </Link>
