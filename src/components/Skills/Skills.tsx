@@ -113,7 +113,7 @@ const Skills = () => {
         exit="hidden"
         className="text-center section-title mb-5 md:text-left"
       >
-        <span className="text-primary">Soft</span> Skills
+        <span className="text-primary-color">Soft</span> Skills
       </motion.h2>
       <motion.p
         variants={fadeIn("right", 0.25)}
@@ -131,7 +131,7 @@ const Skills = () => {
         exit="hidden"
         className="text-center section-title mb-5 md:text-left"
       >
-        <span className="text-primary">Technical</span> Skills
+        <span className="text-primary-color">Technical</span> Skills
       </motion.h2>
       <motion.div
         variants={fadeIn("up", 0.25)}
@@ -158,7 +158,7 @@ const Skills = () => {
         exit="hidden"
         className="text-center section-title mb-5 md:text-left"
       >
-        <span className="text-primary">Others</span>
+        <span className="text-primary-color">Others</span>
       </motion.h2>
       <motion.div
         variants={fadeIn("up", 0.25)}
