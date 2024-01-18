@@ -28,7 +28,7 @@ interface Detail {
     id: number;
     name: string;
     member: string;
-    img: StaticImageData;
+    img: StaticImageData | string;
     type: string;
     time: string;
     detail: Detail[];
@@ -55,13 +55,69 @@ interface Detail {
     },
     {
       id: 5,
+      name: "Mobile",
+    },
+    {
+      id: 6,
       name: "Ecommerce",
     },
   ];
   
   const ProjectList: Project[] = [
     {
-      id: 0,
+      id: 8,
+      name: "Chanh Xe Mien Tay (Mobile)",
+      member: "Final Capstone project",
+      img: "https://res.cloudinary.com/dad0fircy/image/upload/v1705564384/capstone/banner_kx6iz3.png",
+      type: "Application, API, UI Design, Mobile",
+      time: "Dec 2023 - Jan 2024",
+      detail: [
+        {
+          detailItem:
+            "This mobile application is designed for customers and is part of the official ChanhXeMienTay project—a 5-month final capstone project undertaken by a team of FPT students.",
+        },
+        {
+          detailItem:
+            "ChanhXeMienTay is a platform that bridges 'Nhà chành' and customers, offering flexible route search capabilities matched by the ChanhXeMienTay system. It not only enables customers to find suitable routes but also provides 'Nhà chành' with modern and user-friendly features management at an extremely affordable fee.",
+        },
+        {
+          detailItem:
+            "Features: Authentication, Search routes, Booking, Order details, Tracking orders, Tracking payments, View notifications, Account settings.",
+        },
+        {
+          detailItem:
+            "Technologies: React Native",
+        },
+      ],
+      repository: "https://github.com/nthieu1332002/chanhxemientay-customer-mobile/",
+      demo: "https://github.com/nthieu1332002/chanhxemientay-customer-mobile/",
+    },
+    {
+      id: 7,
+      name: "Chanh Xe Mien Tay (Web)",
+      member: "Final Capstone project",
+      img: "https://res.cloudinary.com/dad0fircy/image/upload/v1705408211/capstone/homepage_t2exrr.png",
+      type: "Application, API, UI Design",
+      time: "Aug 2023 - Jan 2024",
+      detail: [
+        {
+          detailItem:
+            "This is an application for customers role - part of the official ChanhXeMienTay project - a 5-month final capstone project of a FPT student team.",
+        },
+        {
+          detailItem:
+            "ChanhXeMienTay is a platform that bridges 'Nhà chành' and customers, offering flexible route search capabilities matched by the ChanhXeMienTay system. It not only enables customers to find suitable routes but also provides 'Nhà chành' with modern and user-friendly features management at an extremely affordable fee.",
+        },
+        {
+          detailItem:
+            "Technologies: NextJs, TailwindCss, Zustand, Laravel, AWS, Cloudinary, Google Maps API,...",
+        },
+      ],
+      repository: "https://github.com/nthieu1332002/capstone-project-customer",
+      demo: "https://chanhxemientay.vercel.app/",
+    },
+    {
+      id: 6,
       name: "Discord Clone",
       member: "Individual project",
       img: discord,
@@ -97,7 +153,7 @@ interface Detail {
       demo: "https://discord-clone-nthieu.vercel.app/",
     },
     {
-      id: 1,
+      id: 5,
       name: "IMIU Web",
       member: "Group project",
       img: imiu,
@@ -125,7 +181,7 @@ interface Detail {
       demo: "https://imiu-web.vercel.app/",
     },
     {
-      id: 2,
+      id: 4,
       name: "Safe Building",
       member: "Group project",
       img: safebuilding,
@@ -182,7 +238,7 @@ interface Detail {
       demo: "",
     },
     {
-      id: 4,
+      id: 2,
       name: "My Portfolio (old)",
       member: "Individual project",
       img: portfolioold,
@@ -201,7 +257,7 @@ interface Detail {
       demo: "https://portifolio-hieu-nguyen-test.netlify.app/",
     },
     {
-      id: 5,
+      id: 1,
       name: "Hmovies",
       member: "Individual project",
       img: hmovie,
@@ -220,7 +276,7 @@ interface Detail {
       demo: "https://movie-web-vercel-brown.vercel.app/",
     },
     {
-      id: 6,
+      id: 0,
       name: "The H Store",
       member: "Individual project",
       img: thehstore,
