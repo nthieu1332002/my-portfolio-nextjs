@@ -30,9 +30,9 @@ const ProjectModal = ({ item, setSelectedItem }: ProjectModalProps) => {
               : "translate-y-full opacity-0"
           )}
         >
-          <div className="translate h-full lg:h-auto border-0 rounded-lg shadow-lg flex flex-col w-full bg-red-50 outline-none focus:outline-none">
+          <div className="translate h-auto border-0 rounded-lg shadow-lg flex flex-col w-full bg-red-50 outline-none focus:outline-none">
             {/*header*/}
-            <div className="px-6 py-3 z-10 rounded-t justify-center relative">
+            <div className="px-6 py-1 z-10 rounded-t justify-center relative">
               <button
                 className="p-1 border-0 hover:opacity-70 transition absolute right-5 hover:bg-gray-200 rounded-full"
                 onClick={() => setSelectedItem()}
@@ -41,16 +41,19 @@ const ProjectModal = ({ item, setSelectedItem }: ProjectModalProps) => {
               </button>
             </div>
 
-            <div className="mx-auto w-full text-black p-6 rounded-lg">
-              <Image
-                src={item.img}
-                alt={item.name}
-                sizes="(max-width: 50px) 2vw, (max-width: 425px) 50vw, 75vw"
-                quality={60}
-                placeholder="blur"
-                priority
-                className="rounded-lg object-contain"
-              />
+            <div className="mx-auto w-full h-full text-black p-6 rounded-lg">
+              <div className="relative w-full h-60 md:h-96">
+                <Image
+                  src={item.img}
+                  alt={item.name}
+                  sizes="(max-width: 50px) 2vw, (max-width: 425px) 50vw, 75vw"
+                  quality={60}
+                  width={400}
+                  height={200}
+                  priority
+                  className="absolute h-full w-full rounded-lg object-cover"
+                />
+              </div>
               <div className="text-sm mt-5">{item.member}</div>
               <div className=" text-2xl font-bold tracking-wide">
                 {item.name}{" "}

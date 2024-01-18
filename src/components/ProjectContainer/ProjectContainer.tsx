@@ -25,11 +25,12 @@ const ProjectContainer = ({ item, setSelectedItem }: ProjectContainerProps) => {
         <Image
           src={item.img}
           alt={item.name}
-          sizes="(max-width: 425px) 50vw, 75vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          width={100}
+          height={100}
           quality={60}
-          placeholder="blur"
           priority
-          className="object-cover h-full transition group-hover:scale-125 duration-300"
+          className="object-cover  w-full h-full transition group-hover:scale-125 duration-300"
         />
         <div className="absolute flex items-end left-0 right-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-900 to-transparent text-red-300 bg-opacity-50 duration-500">
           <div className="text-white w-full p-5">
