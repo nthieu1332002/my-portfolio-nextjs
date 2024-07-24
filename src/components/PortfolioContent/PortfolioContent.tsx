@@ -63,9 +63,13 @@ interface Detail {
     },
   ];
   
+let _fakeId = 1;
+function getFakeId() {
+  return _fakeId++;
+}
   const ProjectList: Project[] = [
     {
-      id: 8,
+      id: getFakeId(),
       name: "Chanh Xe Mien Tay (Mobile)",
       member: "Final Capstone project",
       img: "https://res.cloudinary.com/dad0fircy/image/upload/v1705564384/capstone/banner_kx6iz3.png",
@@ -93,7 +97,7 @@ interface Detail {
       demo: "https://github.com/nthieu1332002/chanhxemientay-customer-mobile/",
     },
     {
-      id: 7,
+      id: getFakeId(),
       name: "Chanh Xe Mien Tay (Web)",
       member: "Final Capstone project",
       img: "https://res.cloudinary.com/dad0fircy/image/upload/v1705408211/capstone/homepage_t2exrr.png",
@@ -117,7 +121,7 @@ interface Detail {
       demo: "https://chanhxemientay.vercel.app/",
     },
     {
-      id: 6,
+      id: getFakeId(),
       name: "Discord Clone",
       member: "Individual project",
       img: discord,
@@ -153,7 +157,7 @@ interface Detail {
       demo: "https://discord-clone-nthieu.vercel.app/",
     },
     {
-      id: 5,
+      id: getFakeId(),
       name: "IMIU Web",
       member: "Group project",
       img: imiu,
@@ -181,7 +185,7 @@ interface Detail {
       demo: "https://imiu-web.vercel.app/",
     },
     {
-      id: 4,
+      id: getFakeId(),
       name: "Safe Building",
       member: "Group project",
       img: safebuilding,
@@ -209,8 +213,7 @@ interface Detail {
       demo: "https://safe-building-web.vercel.app/",
     },
     {
-      id: 3,
-  
+      id: getFakeId(),
       name: "KetChat",
       member: "Individual project",
       img: ketchat,
@@ -238,7 +241,7 @@ interface Detail {
       demo: "",
     },
     {
-      id: 2,
+      id: getFakeId(),
       name: "My Portfolio (old)",
       member: "Individual project",
       img: portfolioold,
@@ -257,7 +260,7 @@ interface Detail {
       demo: "https://portifolio-hieu-nguyen-test.netlify.app/",
     },
     {
-      id: 1,
+      id: getFakeId(),
       name: "Hmovies",
       member: "Individual project",
       img: hmovie,
@@ -331,7 +334,7 @@ const PortfolioContent = () => {
               <div className="text-xl mt-10 flex justify-center gap-4">
                 <div className="w-48 flex flex-col gap-1 cursor-pointer ">
                   <div className="font-bold text-5xl text-white ">
-                    <AnimatedNumber value={1} />+
+                    <AnimatedNumber value={5} />+
                   </div>
                   <div className="text-base tracking-wide text-slate-200">
                     Satisfied clients
@@ -339,7 +342,7 @@ const PortfolioContent = () => {
                 </div>
                 <div className="w-48 flex flex-col gap-1 text-white cursor-pointer ">
                   <div className="font-bold text-5xl text-white ">
-                    <AnimatedNumber value={15} />+
+                    <AnimatedNumber value={20} />+
                   </div>
                   <div className="text-base tracking-wide text-slate-200">
                     Projects Completed
