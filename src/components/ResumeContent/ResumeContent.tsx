@@ -30,8 +30,31 @@ export interface Education {
 }
 const ExperienceList: Experience[] = [
   {
+    name: "Junior Front-end Developer",
+    time: "Nov 2023 - Now",
+    company: "Aiara Corporation - Remote",
+    link: "https://aiaracorp.com/",
+    description: [
+      {
+        detail: "Collaborated with 3 other team members to complete UI and implement functionalities for both website and mobile sections.",
+      },
+      {
+        detail:
+          "Developed fully reusable code to streamline future projects and enhance efficiency.",
+      },
+      {
+        detail:
+          "Managed and maintained over 60 web and mobile pages, including graphics and online marketing materials, ensuring optimal functionality and visual appeal.",
+      },
+      {
+        detail:
+          "Implemented effective SEO strategies.",
+      },
+    ],
+  },
+  {
     name: "Intern Front-end Developer",
-    time: "Aug, 2022 - Jan, 2023",
+    time: "Aug 2022 - Jan 2023",
     company: "R2S Corporation",
     link: "https://r2s.com.vn/",
     description: [
@@ -46,20 +69,20 @@ const ExperienceList: Experience[] = [
   },
 ];
 const EducationList: Education[] = [
-  {
-    name: "Ielts Certification",
-    time: "2020",
-    title: "British Council",
-    link: "https://github.com/nthieu1332002/certifications",
-    description: [
-      {
-        detail: "Ielts 5.5",
-      },
-    ],
-  },
+  // {
+  //   name: "Ielts Certification",
+  //   time: "2020",
+  //   title: "British Council",
+  //   link: "https://github.com/nthieu1332002/certifications",
+  //   description: [
+  //     {
+  //       detail: "Ielts 5.5",
+  //     },
+  //   ],
+  // },
   {
     name: "Bachelor's Degree",
-    time: "2020 - 2023",
+    time: "2020 - Jan 2024",
     title: "Software Engineering - FPT University",
     link: "https://github.com/nthieu1332002/certifications",
     description: [
@@ -82,30 +105,7 @@ const ResumeContent = () => {
               resume
             </h1>
             <div className="md:flex md:gap-5">
-              <div className="flex-1">
-                <motion.h2
-                  variants={fadeIn("right", 0.2)}
-                  initial="hidden"
-                  animate="show"
-                  exit="hidden"
-                  className="text-center section-title mb-5 md:text-left"
-                >
-                  <span className="text-primary-color">My</span> Experience
-                </motion.h2>
-                {ExperienceList.map((item) => {
-                  return (
-                    <ResumeItem
-                      key={item.name}
-                      name={item.name}
-                      time={item.time}
-                      company={item.company}
-                      link={item.link}
-                      description={item.description}
-                    />
-                  );
-                })}
-              </div>
-              <div className="invisible md:visible border-l-[1px]"></div>
+              
               <div className="flex-1">
                 <motion.h2
                   variants={fadeIn("left", 0.2)}
@@ -125,6 +125,31 @@ const ResumeContent = () => {
                       title={item.title}
                       link={item.link}
                       description={item.description}
+                    />
+                  );
+                })}
+              </div>
+              <div className="invisible md:visible border-l-[1px]"></div>
+              <div className="flex-1">
+                <motion.h2
+                  variants={fadeIn("right", 0.2)}
+                  initial="hidden"
+                  animate="show"
+                  exit="hidden"
+                  className="text-center section-title mb-5 md:text-left"
+                >
+                  <span className="text-primary-color">My</span> Experience
+                </motion.h2>
+                {ExperienceList.map((item, index) => {
+                  return (
+                    <ResumeItem
+                      key={item.name}
+                      name={item.name}
+                      time={item.time}
+                      company={item.company}
+                      link={item.link}
+                      description={item.description}
+                      delay={index}
                     />
                   );
                 })}
