@@ -328,7 +328,7 @@ const PortfolioContent = () => {
         <div className="lg:relative lg:min-h-screen lg:h-full flex flex-col-reverse">
           <div className="pt-10 py-20 lg:w-1/2 lg:pt-28 lg:py-20">
             <div className="relative text-center px-5 py-10">
-              <h1 className="font-bold text-[4rem] lg:text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
+              <h1 className="font-bold text-[3.5rem] lg:text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
                 portfolio
               </h1>
               <div className="text-xl mt-10 flex justify-center gap-4">
@@ -373,7 +373,7 @@ const PortfolioContent = () => {
                 initial="hidden"
                 animate="show"
                 exit="hidden"
-                className="flex gap-3 text-sm md:text-base md:gap-5 justify-center font-semibold mb-5"
+                className="flex gap-3 text-sm md:text-base md:gap-5 justify-center font-semibold mb-5 overflow-auto md:overflow-hidden"
               >
                 {ProjectNavList.map((item) => (
                   <ProjectNavBar
@@ -390,7 +390,7 @@ const PortfolioContent = () => {
                 animate="show"
                 exit="hidden"
                 layout
-                className="flex lg:justify-start md:justify-center items-stretch sm:gap-3 lg:gap-4 flex-wrap ml-2 my-0"
+                className="flex lg:justify-start md:justify-center items-stretch sm:gap-3 lg:gap-4 flex-wrap my-0"
               >
                 <AnimatePresence>
                   {filteredList.map((item) => {

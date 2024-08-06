@@ -144,7 +144,7 @@ const Skills = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="flex justify-stretch gap-5 flex-wrap mb-5"
+        className="flex justify-between md:justify-stretch gap-5 flex-wrap mb-5"
       >
         {SkillsList.map((item) => {
           return (
@@ -171,7 +171,7 @@ const Skills = () => {
         initial="hidden"
         animate="show"
         exit="hidden"
-        className="flex justify-stretch gap-5 flex-wrap mb-5"
+        className="flex justify-between md:justify-stretch gap-5 flex-wrap mb-5"
       >
         {OtherSkillsList.map((item) => {
           return (
