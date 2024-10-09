@@ -25,8 +25,8 @@ module.exports = {
       colors: {
         "nav-bg": "#181818",
         "white-primary": "#a1a1a1",
-        primary: "#ee6192",
-        "primary-color": "#ee6192",
+        primary: "#61eee5",
+        "primary-color": "#61eee5",
         secondary: "#2b2d30",
         "button-bg": "#35373b",
         border: "hsl(var(--border))",
