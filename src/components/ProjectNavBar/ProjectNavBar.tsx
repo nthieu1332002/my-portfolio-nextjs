@@ -7,7 +7,7 @@ interface ProjectNavBarProps {
 }
 
 const ProjectNavBar = ({ text, selectedType, setSelectedType }: ProjectNavBarProps) => {
-  return <p className={`${selectedType === text ? "text-primary-color " : "text-white "}  hover:text-primary-color cursor-pointer`} onClick={() => setSelectedType(text)}>{text}</p>;
+  return <p className={`${selectedType === text ? "text-primary-color " : "text-white "}  hover:text-primary-color whitespace-nowrap cursor-pointer`} onClick={() => setSelectedType(text)}>{text}</p>;
 };
 
 export default ProjectNavBar;
