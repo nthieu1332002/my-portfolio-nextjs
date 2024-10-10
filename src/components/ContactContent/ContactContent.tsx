@@ -54,7 +54,7 @@ const ContactContent = () => {
       <>
         <TransitionEffect />
         <Toaster />
-        <div className="flex justify-center w-full h-full">
+        <div className="flex justify-center w-full h-screen">
           <div className="content pt-28 py-20 overflow-y-scroll no-scrollbar">
             <div className="relative text-center px-5 py-12">
               <h1 className="font-bold text-[4rem] lg:text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
