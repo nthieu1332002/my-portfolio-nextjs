@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
 import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 import React from "react";
 import { PiDownloadSimpleBold } from "react-icons/pi";
 import { BsGithub } from "react-icons/bs";
-import { AiOutlineFacebook } from "react-icons/ai";
+import { AiOutlineFacebook, AiOutlineLinkedin } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 import img from "../../../public/assets/profile.avif";
@@ -50,7 +50,7 @@ const AboutContent = () => {
               className="flex gap-3 justify-center mt-8 lg:mt-4"
             >
               <CustomButton
-                link="/CV-NguyenTrungHieu-Frontend-Developer.pdf"
+                link="/NguyenTrungHieu-FullStack-Developer.pdf"
                 icon={<PiDownloadSimpleBold size={20} />}
                 text="Download CV"
                 download={true}
@@ -58,10 +58,17 @@ const AboutContent = () => {
               <CustomButton
                 link="https://github.com/nthieu1332002"
                 icon={<BsGithub size={20} />}
+                title="Github"
               />
               <CustomButton
                 link="https://www.facebook.com/MediumHealing13/"
                 icon={<AiOutlineFacebook size={20} />}
+                title="Facebook"
+              />
+              <CustomButton
+                link="https://www.linkedin.com/in/nguyen-trung-hieu-056275213/"
+                icon={<AiOutlineLinkedin size={20} />}
+                title="Linkedin"
               />
             </motion.div>
           </div>

@@ -32,8 +32,8 @@ interface Detail {
     type: string;
     time: string;
     detail: Detail[];
-    repository: string;
-    demo: string;
+    repository?: string;
+    demo?: string;
   }
   
   const ProjectNavList = [
@@ -68,6 +68,29 @@ function getFakeId() {
   return _fakeId++;
 }
   const ProjectList: Project[] = [
+    {
+      id: getFakeId(),
+      name: "Phu Yen Eye Hospital",
+      member: "Freelance Project",
+      img: "https://res.cloudinary.com/dad0fircy/image/upload/v1730969897/portfolio/16e79238-60f6-4cb8-861c-066feec80e52.png",
+      type: "Application, API, UI Design",
+      time: "Aug 2024 - Oct 2024",
+      detail: [
+        {
+          detailItem:
+            "Developed a responsive website for medical services, featuring an admin panel for managing blogs, doctors, medical news, and a client-facing site for reading content and scheduling appointments.",
+        },
+        {
+          detailItem:
+            "Managed deployment on a VPS with Docker for environment consistency, utilizing GitHub Actions CI/CD workflows for automated, reliable updates.",
+        },
+        {
+          detailItem:
+            "Developed and executed advanced SEO strategies to enhance search visibility and drive organic traffic growth.",
+        },
+      ],
+      demo: "https://bvm-web.vercel.app/",
+    },
     {
       id: getFakeId(),
       name: "Chanh Xe Mien Tay (Mobile)",
@@ -342,7 +365,7 @@ const PortfolioContent = () => {
                 </div>
                 <div className="w-48 flex flex-col gap-1 text-white cursor-pointer ">
                   <div className="font-bold text-5xl text-white ">
-                    <AnimatedNumber value={20} />+
+                    <AnimatedNumber value={30} />+
                   </div>
                   <div className="text-base tracking-wide text-slate-200">
                     Projects Completed

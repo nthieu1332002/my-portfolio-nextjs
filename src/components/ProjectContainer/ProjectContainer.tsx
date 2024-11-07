@@ -30,7 +30,7 @@ const ProjectContainer = ({ item, setSelectedItem }: ProjectContainerProps) => {
           height={100}
           quality={60}
           priority
-          className="object-cover  w-full h-full transition group-hover:scale-125 duration-300"
+          className="object-cover w-full h-full transition group-hover:scale-125 duration-300"
         />
         <div className="absolute flex items-end left-0 right-0 bottom-0 h-1/2 bg-gradient-to-t from-slate-900 to-transparent text-red-300 bg-opacity-50 duration-500">
           <div className="text-white w-full p-5">
