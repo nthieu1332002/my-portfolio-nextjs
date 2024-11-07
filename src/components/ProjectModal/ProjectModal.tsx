@@ -42,16 +42,16 @@ const ProjectModal = ({ item, setSelectedItem }: ProjectModalProps) => {
             </div>
 
             <div className="mx-auto w-full h-full text-black p-6 rounded-lg">
-              <div className="relative w-full h-60 md:h-96">
+              <div className="relative w-full h-60 md:h-80">
                 <Image
                   src={item.img}
                   alt={item.name}
                   sizes="(max-width: 50px) 2vw, (max-width: 425px) 50vw, 75vw"
-                  quality={60}
+                  quality={50}
                   width={400}
                   height={200}
                   priority
-                  className="absolute h-full w-full rounded-lg object-cover"
+                  className="absolute h-full w-full rounded-lg object-container"
                 />
               </div>
               <div className="text-sm mt-5">{item.member}</div>
@@ -75,14 +75,16 @@ const ProjectModal = ({ item, setSelectedItem }: ProjectModalProps) => {
                 </ul>
               </div>
               <div className="flex gap-2 justify-end">
-                <a
-                  target="_blank"
-                  href={item.repository}
-                  rel="noopener noreferrer"
-                  className="text-sm font-bold p-3 px-4 rounded-full text-primary-color bg-white  hover:-translate-y-1 hover:drop-shadow-lg duration-300"
-                >
-                  Repository
-                </a>
+                {item.repository && (
+                  <a
+                    target="_blank"
+                    href={item.repository}
+                    rel="noopener noreferrer"
+                    className="text-sm font-bold p-3 px-4 rounded-full text-primary-color bg-white  hover:-translate-y-1 hover:drop-shadow-lg duration-300"
+                  >
+                    Repository
+                  </a>
+                )}
                 <a
                   target="_blank"
                   href={item.demo}

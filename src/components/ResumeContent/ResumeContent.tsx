@@ -30,8 +30,27 @@ export interface Education {
 }
 const ExperienceList: Experience[] = [
   {
+    name: "Freelance Fullstack Web Developer",
+    time: "Aug 2024 - Oct 2024",
+    company: "Phu Yen Eye Hospital",
+    link: "https://www.facebook.com/BVMPhuYen/",
+    description: [
+      {
+        detail: "Developed a responsive website for medical services, featuring an admin panel for managing blogs, doctors, medical news, and a client-facing site for reading content and scheduling appointments.",
+      },
+      {
+        detail:
+          "Managed deployment on a VPS with Docker for environment consistency, utilizing GitHub Actions CI/CD workflows for automated, reliable updates.",
+      },
+      {
+        detail:
+          "Developed and executed advanced SEO strategies to enhance search visibility and drive organic traffic growth.",
+      }
+    ],
+  },
+  {
     name: "Junior Front-end Developer",
-    time: "Nov 2023 - Now",
+    time: "Nov 2023 - Sep 2024",
     company: "Aiara Corporation - Remote",
     link: "https://aiaracorp.com/",
     description: [
