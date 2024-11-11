@@ -2,7 +2,6 @@
 
 import EducationItem from "@/components/EducationItem/EducationItem";
 import ResumeItem from "@/components/ResumeItem/ResumeItem";
-import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 import { fadeIn } from "@/utils/variants";
 import { motion } from "framer-motion";
 import img from "../../../public/assets/me.avif";
@@ -116,7 +115,6 @@ const EducationList: Education[] = [
 const ResumeContent = () => {
   return (
     <>
-      <TransitionEffect />
       <div className="lg:relative lg:min-h-screen lg:h-full flex flex-col-reverse">
         <div className="pt-10 py-20 lg:w-1/2 lg:pt-28 lg:py-20">
           <div className="relative px-5 py-12">

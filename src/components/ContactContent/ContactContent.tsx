@@ -1,7 +1,6 @@
 'use client'
 
 import CustomButton from "@/components/CustomButton/CustomButton";
-import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 import { BsGithub } from "react-icons/bs";
 import { AiOutlineFacebook } from "react-icons/ai";
 import { motion } from "framer-motion";
@@ -52,7 +51,6 @@ const ContactContent = () => {
   
     return (
       <>
-        <TransitionEffect />
         <Toaster />
         <div className="flex justify-center w-full h-screen">
           <div className="content pt-28 py-20 overflow-y-scroll no-scrollbar">
