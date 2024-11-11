@@ -9,6 +9,8 @@ const TypewriterHomepage = () => {
       words={[
         "Software Engineer.",
         "Front-end Developer.",
+        "Back-end Developer.",
+        "Full-Stack Developer.",
         "Mobile Developer.",
       ]}
       loop={5}
