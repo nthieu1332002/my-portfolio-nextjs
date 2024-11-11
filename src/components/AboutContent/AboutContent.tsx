@@ -45,7 +45,7 @@ const AboutContent = () => {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="flex gap-3 justify-center mt-8 lg:mt-4"
+              className="flex flex-col md:flex-row gap-3 justify-center items-center flex-wrap mt-8 lg:mt-4"
             >
               <CustomButton
                 link="/NguyenTrungHieu-FullStack-Developer.pdf"
@@ -53,21 +53,23 @@ const AboutContent = () => {
                 text="Download CV"
                 download={true}
               />
-              <CustomButton
-                link="https://github.com/nthieu1332002"
-                icon={<BsGithub size={20} />}
-                title="Github"
-              />
-              <CustomButton
-                link="https://www.facebook.com/MediumHealing13/"
-                icon={<AiOutlineFacebook size={20} />}
-                title="Facebook"
-              />
-              <CustomButton
-                link="https://www.linkedin.com/in/nguyen-trung-hieu-056275213/"
-                icon={<AiOutlineLinkedin size={20} />}
-                title="Linkedin"
-              />
+              <div className="flex gap-3 justify-center flex-wrap">
+                <CustomButton
+                  link="https://github.com/nthieu1332002"
+                  icon={<BsGithub size={20} />}
+                  title="Github"
+                />
+                <CustomButton
+                  link="https://www.facebook.com/MediumHealing13/"
+                  icon={<AiOutlineFacebook size={20} />}
+                  title="Facebook"
+                />
+                <CustomButton
+                  link="https://www.linkedin.com/in/nguyen-trung-hieu-056275213/"
+                  icon={<AiOutlineLinkedin size={20} />}
+                  title="Linkedin"
+                />
+              </div>
             </motion.div>
           </div>
           <Skills />
