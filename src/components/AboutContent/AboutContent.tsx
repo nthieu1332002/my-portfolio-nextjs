@@ -1,6 +1,5 @@
 "use client";
 
-import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 import React from "react";
 import { PiDownloadSimpleBold } from "react-icons/pi";
 import { BsGithub } from "react-icons/bs";
@@ -16,7 +15,6 @@ import { fadeIn } from "@/utils/variants";
 const AboutContent = () => {
   return (
     <>
-      <TransitionEffect />
       <div className="lg:relative lg:h-full flex flex-col-reverse">
         <div className="pt-10 py-20 lg:w-1/2 lg:pt-28 lg:py-20">
           <div className="relative text-center px-5 py-10">

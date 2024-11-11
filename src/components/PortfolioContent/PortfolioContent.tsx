@@ -2,7 +2,6 @@
 
 import AnimatedNumber from "@/components/AnimatedNumber/AnimatedNumber";
 import ProjectContainer from "@/components/ProjectContainer/ProjectContainer";
-import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 import React, { useEffect, useState } from "react";
 import imiu from "../../../public/assets/imiu.png";
 import discord from "../../../public/assets/discord.png";
@@ -345,7 +344,6 @@ const PortfolioContent = () => {
   
     return (
       <>
-        <TransitionEffect />
         <ProjectModal item={selectedItem} setSelectedItem={removeItem} />
   
         <div className="lg:relative lg:min-h-screen lg:h-full flex flex-col-reverse">
@@ -436,7 +434,7 @@ const PortfolioContent = () => {
               height={100}
               width={100}
               sizes="(max-width: 50px) 2vw, (max-width: 425px) 50vw, 75vw"
-              quality={10}
+              quality={100}
               placeholder="blur"
               priority
               className="object-cover w-full h-auto aspect-video lg:h-full rounded-lg"

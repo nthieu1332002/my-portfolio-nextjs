@@ -1,4 +1,3 @@
-import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 import AnimatedText from "@/components/AnimatedText/AnimatedText";
 import wall from "../../public/assets/wall.avif";
 import Image from "next/image";
@@ -20,7 +19,6 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <TransitionEffect />
       <div className="relative h-full w-full">
         <div className="text-center h-screen w-screen">
           <Image
