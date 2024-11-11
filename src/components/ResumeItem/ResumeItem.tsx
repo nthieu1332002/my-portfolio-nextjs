@@ -44,7 +44,7 @@ const ResumeItem = ({
         </Link>
         <div className="description text-slate-100 mt-2">
           {description.map((item, index) => {
-            return <p key={index}>- {item.detail}</p>;
+            return <p key={index}><span className="text-primary-color">-</span> {item.detail}</p>;
           })}
         </div>
       </div>
