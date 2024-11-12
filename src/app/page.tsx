@@ -48,7 +48,7 @@ export default function Home() {
                   fontSize: "22px",
                   paddingTop: "2rem",
                   fontWeight: "normal",
-                  color: "#949590",
+                  color: "white",
                 }}
               >
                 I am a{" "}
