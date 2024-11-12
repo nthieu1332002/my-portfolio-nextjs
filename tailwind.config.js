@@ -24,7 +24,7 @@ module.exports = {
       },
       colors: {
         "nav-bg": "#181818",
-        "white-primary": "#a1a1a1",
+        "white-primary": "#e8e3e3",
         primary: "#25f52c",
         "primary-color": "#25f52c",
         secondary: "#2b2d30",
