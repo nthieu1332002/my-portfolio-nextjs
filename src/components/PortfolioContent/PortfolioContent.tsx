@@ -81,7 +81,7 @@ function getFakeId() {
         },
         {
           detailItem:
-            "Managed deployment on a VPS with Docker for environment consistency, utilizing GitHub Actions CI/CD workflows for automated, reliable updates.",
+            "Managed deployment on a VPS with PM2, and Nginx, utilizing GitHub Actions CI/CD workflows for automated, reliable updates.",
         },
         {
           detailItem:
