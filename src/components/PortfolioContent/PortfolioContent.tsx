@@ -88,7 +88,7 @@ function getFakeId() {
             "Developed and executed advanced SEO strategies to enhance search visibility and drive organic traffic growth.",
         },
       ],
-      demo: "https://bvm-web.vercel.app/",
+      demo: "https://benhvienmatphuyen.vn/",
     },
     {
       id: getFakeId(),
