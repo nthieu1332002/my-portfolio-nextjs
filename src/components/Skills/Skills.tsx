@@ -6,7 +6,7 @@ import { SiExpress, SiMongodb, SiShadcnui } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import { BiGitBranch } from "react-icons/bi";
 import { motion } from "framer-motion";
-import { TbBrandReactNative } from "react-icons/tb";
+import { TbBrandReactNative, TbBrandMantine } from "react-icons/tb";
 import {
   SiNextdotjs,
   SiTailwindcss,
@@ -94,6 +94,10 @@ const OtherSkillsList: Skill[] = [
   {
     name: "ShadcnUI",
     icon: <SiShadcnui size="70" />,
+  },
+  {
+    name: "Mantine",
+    icon: <TbBrandMantine size="70" />,
   },
   {
     name: "Firebase",
