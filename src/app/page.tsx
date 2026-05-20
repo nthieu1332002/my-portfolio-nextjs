@@ -1,5 +1,4 @@
 import AnimatedText from "@/components/AnimatedText/AnimatedText";
-import wall from "../../public/assets/wall.avif";
 import Image from "next/image";
 import { Metadata } from "next";
 import TypewriterHomepage from "@/components/TypewriterHomepage/TypewriterHomepage";
@@ -22,13 +21,13 @@ export default function Home() {
       <div className="relative h-full w-full">
         <div className="text-center h-screen w-screen">
           <Image
-            src={wall}
+            src={'/assets/wall.avif'}
             alt="Background Image"
             width={100}
             height={100}
             quality={100}
             sizes="(max-width: 50px) 2vw, (max-width: 425px) 50vw, 75vw"
-            placeholder="blur"
+            // placeholder="blur"
             priority
             className="object-cover w-screen h-screen"
           />
