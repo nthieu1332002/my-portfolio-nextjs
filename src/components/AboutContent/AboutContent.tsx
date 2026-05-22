@@ -32,12 +32,18 @@ const AboutContent = () => {
                 <strong className="text-primary-color">
                   Hello, I&apos;m Trung Hieu.{" "}
                 </strong>
-                I am a junior Web Developer. I enjoy to create beautiful things
-                that live on the internet. I have experience in website building
-                and customization. I am familiar with{" "}
+                I am a Front-end Developer with 3+ years of experience building
+                high-performance web applications. I specialize in{" "}
                 <strong className="text-primary-color">
-                  Reactjs, Nextjs, TypeScript, Scss, Redux,...
+                  React, Next.js, TypeScript, and Tailwind CSS
+                </strong>{" "}
+                to craft scalable, SEO-optimized interfaces with exceptional user
+                experiences. I also have full-stack capabilities with{" "}
+                <strong className="text-primary-color">
+                  Node.js, Express, MongoDB, ASP.NET, Power Pages, and Dataverse
                 </strong>
+                , enabling me to deliver end-to-end solutions from frontend architecture
+                to backend API development.
               </p>
             </motion.div>
             <motion.div

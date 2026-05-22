@@ -3,9 +3,9 @@ import ResumeContent from "@/components/ResumeContent/ResumeContent";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "My resume",
+  title: "Resume | Front-end Developer Experience & Education",
   description:
-    "I am a dedicated and motivated individual with industry experience gained through an internship at an Outsourcing company. I have also enhanced my skills through self-learning and practical application. Over time, my English proficiency has significantly improved, allowing me to communicate well.",
+    "3+ years of professional experience as a Front-end Developer leading frontend architecture, building enterprise applications with React and Next.js, implementing SEO strategies, and developing backend features with Node.js and ASP.NET. Software Engineering graduate from FPT University.",
   alternates: {
     canonical: "/resume",
     languages: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const Resume = () => {
   return (
-    <ResumeContent/>
+    <ResumeContent />
   );
 };
 

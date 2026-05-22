@@ -4,9 +4,9 @@ import { Metadata } from "next";
 import TypewriterHomepage from "@/components/TypewriterHomepage/TypewriterHomepage";
 
 export const metadata: Metadata = {
-  title: "Welcome to My Portfolio | Nguyen Trung Hieu | Nextjs | SEO",
+  title: "Nguyen Trung Hieu | Front-end Developer | React, Next.js & TypeScript",
   description:
-    "Welcome to my portfolio! Showcase of my expertise in web skills. Browse through my projects, demonstrating creativity, user experience (UX), and clean code. Explore my skills in creating intuitive user interfaces (UI) and optimizing web performance. Get in touch for potential collaborations or employment opportunities.",
+    "Front-end Developer specializing in React, Next.js, and TypeScript with full-stack exposure in Node.js and MongoDB. Building performant, SEO-optimized web applications with clean architecture and exceptional user experiences.",
   alternates: {
     canonical: "/",
     languages: {

@@ -7,27 +7,35 @@ const mont = Montserrat({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://nthieu-portfolio.pages.dev/"),
   title: {
-    default: "My Portfolio | Nguyen Trung Hieu | Nextjs | SEO",
-    template: `%s | Nguyen Trung Hieu | Nextjs | SEO`,
+    default: "Nguyen Trung Hieu | Front-end Developer | React & Next.js Specialist",
+    template: `%s | Nguyen Trung Hieu | Front-end Developer`,
   },
   description:
-    "Welcome to my portfolio! Showcase of my expertise in web skills. Browse through my projects, demonstrating creativity, user experience (UX), and clean code. Explore my skills in creating intuitive user interfaces (UI) and optimizing web performance. Get in touch for potential collaborations or employment opportunities.",
+    "Front-end Developer with 3+ years of experience specializing in React, Next.js, and TypeScript. Skilled in building high-performance web applications with SEO optimization, responsive design, and full-stack capabilities including Node.js, Express, MongoDB, ASP.NET, Power Pages, and Dataverse.",
   generator: "Next.js",
-  applicationName: "My Portfolio | Nguyen Trung Hieu | Nextjs | SEO",
+  applicationName: "Nguyen Trung Hieu | Front-end Developer Portfolio",
   referrer: "origin-when-cross-origin",
   keywords: [
-    "Next.js",
-    "React",
+    "Front-end Developer",
+    "React Developer",
+    "Next.js Developer",
+    "TypeScript",
     "JavaScript",
-    "nthieu1332002",
-    "nthieu1332002@gmail.com",
-    "Nextjs SEO",
-    "Nextjs SEO Application",
-    "Nextjs improved SEO",
-    "Nextjs Portfolio SEO",
-    "Nextjs Portfolio",
+    "Full-stack Developer",
+    "Node.js",
+    "ASP.NET",
+    "Power Pages",
+    "Dataverse",
+    "Web Developer Vietnam",
+    "SEO Optimization",
+    "Responsive Web Design",
     "Nguyen Trung Hieu",
     "Nguyễn Trung Hiếu",
+    "nthieu1332002",
+    "Tailwind CSS",
+    "REST API",
+    "MongoDB",
+    "Express.js",
   ],
   authors: [
     { name: "Nguyen Trung Hieu" },
@@ -41,8 +49,9 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Next.js Portfolio SEO | Nguyen Trung Hieu | nthieu",
-    description: "Welcome to my portfolio!",
+    title: "Nguyen Trung Hieu | Front-end Developer | React & Next.js Specialist",
+    description:
+      "Experienced Front-end Developer building scalable web applications with React, Next.js, and TypeScript. Full-stack capable with Node.js, MongoDB, ASP.NET, Power Pages, and Dataverse.",
     images: [
       {
         url: "/open_image.png",
@@ -57,7 +66,6 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "tQA75hRPSCa4q5sfskJVXELUc14ASpYcHNYEeAKtJy0",
-
   },
 };
 

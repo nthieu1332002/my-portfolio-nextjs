@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import ContactContent from "@/components/ContactContent/ContactContent";
 
 export const metadata: Metadata = {
-  title: "Keep in touch",
+  title: "Contact | Hire a Front-end Developer",
   description:
-    "Life is short. I am very happy to interact with you. Feel free to contact me anytime via my social media.",
+    "Looking for an experienced Front-end Developer with React, Next.js, and full-stack skills? Get in touch for collaboration opportunities, freelance projects, or full-time positions.",
   alternates: {
     canonical: "/contact",
     languages: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const Contact = () => {
   return (
-    <ContactContent/>
+    <ContactContent />
   )
 };
 

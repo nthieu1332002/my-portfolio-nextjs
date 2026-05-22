@@ -3,21 +3,21 @@ import PortfolioContent from "@/components/PortfolioContent/PortfolioContent";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "My portfolio",
+  title: "Portfolio | Web Projects & Full-stack Applications",
   description:
-    "Discover a collection of my frontend projects, showcasing creativity, technical expertise, and attention to detail. From responsive websites, interactive prototypes, to sleek user interfaces, each project demonstrates my ability to solve complex problems and deliver exceptional user experiences.",
-    alternates: {
-      canonical: '/portfolio',
-      languages: {
-        'en': '/en/portfolio',
-      },
+    "Explore my web development projects featuring React, Next.js, and Node.js applications. From enterprise platforms with SEO optimization to full-stack apps with REST APIs and database integration — each project demonstrates scalable architecture and polished user interfaces.",
+  alternates: {
+    canonical: "/portfolio",
+    languages: {
+      en: "/en/portfolio",
     },
+  },
 };
 
 
 const Portfolio = () => {
   return (
-    <PortfolioContent/>
+    <PortfolioContent />
   );
 };
 
