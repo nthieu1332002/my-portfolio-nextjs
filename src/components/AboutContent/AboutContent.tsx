@@ -54,7 +54,7 @@ const AboutContent = () => {
               className="flex flex-col md:flex-row gap-3 justify-center items-center flex-wrap mt-8 lg:mt-4"
             >
               <CustomButton
-                link="/NguyenTrungHieu-FullStack-Developer.pdf"
+                link="https://asset.cloudinary.com/dad0fircy/d334bb57bd8ba7402d6cf64fda93c736"
                 icon={<PiDownloadSimpleBold size={20} />}
                 text="Download CV"
                 download={true}

@@ -1,6 +1,7 @@
 import React from "react";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Experience } from "../ResumeContent/ResumeContent";
 
@@ -32,22 +33,27 @@ const ResumeItem = ({
       animate="animate"
       className="p-5 mb-4 w-full rounded-lg bg-button-bg"
     >
-      <div className="flex flex-col">
-        <div className="text-sm text-white-primary">{time}</div>
-        <div className="font-bold text-white">{name}</div>
-        <Link
-          href={link}
-          target="_blank"
-          className="font-semibold text-base text-primary-color w-fit"
-        >
-          {company}
-        </Link>
-        <div className="description text-slate-100 mt-2">
-          {description.map((item, index) => {
-            return <p key={index}><span className="text-primary-color">-</span> {item.detail}</p>;
-          })}
+        <div className="flex flex-col flex-1 min-w-0">
+          <div className="text-sm text-white-primary">{time}</div>
+          <div className="font-bold text-white">{name}</div>
+          <Link
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-base text-primary-color w-fit"
+          >
+            {company}
+          </Link>
+          <div className="description text-slate-100 mt-2">
+            {description.map((item, index) => {
+              return (
+                <p key={index}>
+                  <span className="text-primary-color">-</span> {item.detail}
+                </p>
+              );
+            })}
+          </div>
         </div>
-      </div>
     </motion.div>
   );
 };

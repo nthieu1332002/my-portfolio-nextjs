@@ -43,16 +43,22 @@ const ProjectModal = ({ item, setSelectedItem }: ProjectModalProps) => {
 
             <div className="mx-auto w-full h-full text-black p-6 rounded-lg">
               <div className="relative w-full h-60 md:h-80">
-                <Image
-                  src={item.img}
-                  alt={item.name}
-                  sizes="(max-width: 50px) 2vw, (max-width: 425px) 50vw, 75vw"
-                  quality={50}
-                  width={400}
-                  height={200}
-                  priority
-                  className="absolute h-full w-full rounded-lg object-container"
-                />
+                {item.img ? (
+                  <Image
+                    src={item.img}
+                    alt={item.name}
+                    sizes="(max-width: 50px) 2vw, (max-width: 425px) 50vw, 75vw"
+                    quality={50}
+                    width={400}
+                    height={200}
+                    priority
+                    className="absolute h-full w-full rounded-lg object-container"
+                  />
+                ) : (
+                  <div className="absolute h-full w-full rounded-lg bg-gradient-to-br from-slate-700 to-slate-900 flex items-center justify-center text-slate-200 text-xl font-semibold">
+                    {item.name}
+                  </div>
+                )}
               </div>
               <div className="text-sm mt-5">{item.member}</div>
               <div className=" text-2xl font-bold tracking-wide">

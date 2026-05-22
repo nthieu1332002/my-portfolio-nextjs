@@ -29,54 +29,66 @@ export interface Education {
 }
 const ExperienceList: Experience[] = [
   {
-    name: "Front-end Developer (Full-stack Exposure)",
+    name: "Front-End Developer (Full-stack Exposure)",
     time: "October 2024 - Now",
     company: "Softworld VietNam Ltd",
     link: "https://softworldvietnam.com/",
     description: [
       {
-        detail: "Led frontend development for enterprise and corporate web applications, delivering high-performance, responsive, and user-centric interfaces.",
+        detail:
+          "Led frontend development across multiple enterprise systems spanning passenger e-commerce, loan contract management, retail operations with POS integration, and a B2B bidding and auction platform.",
       },
       {
-        detail: "Defined frontend architecture and selected appropriate technology stacks to ensure scalability, maintainability, and long-term growth.",
+        detail:
+          "Defined frontend architecture, set coding standards, and reviewed merge requests across parallel projects to keep delivery consistent and unblock teammates.",
       },
       {
-        detail: "Established coding standards, reusable component patterns, and best practices to maintain consistency across projects.",
+        detail:
+          "Built reusable code bases and common components for a retail operations platform and a B2B procurement platform, enabling other team members to develop features faster on a shared foundation.",
       },
       {
-        detail: "Conducted code reviews, mentored junior developers, and guided implementation approaches to improve code quality and team productivity.",
+        detail:
+          "Implemented backend features for a loan contract management system using ASP.NET and PostgreSQL — REST APIs, database schema updates, and data flows for contracts, funding sources, and related entities.",
       },
       {
-        detail: "Managed pull requests, resolved merge conflicts, and ensured clean, structured integration into the codebase.",
+        detail:
+          "Designed data models and built features on Microsoft Power Pages with Dataverse for the procurement platform's bidding and auction workflows.",
       },
       {
-        detail: "Developed and integrated RESTful APIs using ASP.NET to support dynamic data processing and system scalability.",
+        detail:
+          "Built an embeddable chatbot UI in a ChatGPT-style layout, plus a script-based widget that can be dropped into any website.",
       },
       {
-        detail: "Implemented Google Analytics (GA4) and Google Tag Manager to track user behavior and optimize conversion performance.",
+        detail:
+          "Built the admin dashboard frontend for a Camera AI attendance system covering employee check-in, vehicle tracking, and reporting.",
       },
       {
-        detail: "Improved SEO performance (20% → 100%) through technical optimizations, including metadata, structured data, and performance tuning.",
+        detail:
+          "Owned the SASCO passenger order flow across 9 sale types with i18n, dynamic content, GA4 tracking, and SEO optimization.",
       },
       {
-        detail: "Built and customized CMS-based solutions using WordPress (Elementor) and Microsoft Power Pages.",
+        detail:
+          "Rebuilt a corporate marketing site on WordPress with Elementor and applied technical SEO improvements.",
       },
       {
-        detail: "Worked with Dataverse to design and manage data-driven features for enterprise applications.",
+        detail:
+          "Implemented Google Analytics (GA4) and Google Tag Manager across delivered sites and improved SEO performance from 20% to 100% through metadata, structured data, and performance tuning.",
       },
       {
-        detail: "Collaborated cross-functionally with designers, backend developers, and stakeholders to deliver end-to-end solutions aligned with business goals.",
+        detail:
+          "Mentored junior developers, conducted code reviews, and managed pull requests and merge conflicts to maintain code quality across teams.",
       },
     ],
   },
   {
     name: "Freelance Fullstack Web Developer",
-    time: "Aug 2024 - Oct 2024",
+    time: "August 2024 - October 2024",
     company: "Phu Yen Eye Hospital",
-    link: "https://www.facebook.com/BVMPhuYen/",
+    link: "https://benhvienmatphuyen.vn/",
     description: [
       {
-        detail: "Developed a responsive website for medical services, featuring an admin panel for managing blogs, doctors, medical news, and a client-facing site for reading content and scheduling appointments.",
+        detail:
+          "Developed a responsive website for medical services, featuring an admin panel for managing blogs, doctors, medical news, and a client-facing site for reading content and scheduling appointments.",
       },
       {
         detail:
@@ -86,12 +98,13 @@ const ExperienceList: Experience[] = [
   },
   {
     name: "Front-End Developer (Remote)",
-    time: "Nov 2023 - Sep 2024",
-    company: "Aiara Corporation (Korea)",
+    time: "November 2023 - September 2024",
+    company: "AIARA Corporation (Korea)",
     link: "https://aiaracorp.com/",
     description: [
       {
-        detail: "Collaborated with other team members to complete UI and implement functionalities for both website and mobile sections based on detailed design specifications.",
+        detail:
+          "Collaborated with other team members to complete UI and implement functionalities for both website and mobile sections based on detailed design specifications.",
       },
       {
         detail:
@@ -108,17 +121,18 @@ const ExperienceList: Experience[] = [
     ],
   },
   {
-    name: "Intern Front-end Developer",
-    time: "Aug 2022 - Jan 2023",
+    name: "Front-End Developer",
+    time: "August 2022 - January 2023",
     company: "R2S Corporation",
-    link: "https://r2s.com.vn/",
+    link: "https://r2s.com.vn",
     description: [
       {
-        detail: "Responsible to build Admin page and main features.",
+        detail:
+          "Developed a recruitment web application specializing in IT jobs, connecting job seekers with ideal opportunities and helping recruiters find qualified candidates.",
       },
       {
         detail:
-          "Collaborate with creative and development teams on the execution of ideas.",
+          "Collaborated cross-functionally with Business Analysts, Backend Developers, and QA Testers to deliver optimized solutions and ensure smooth project execution.",
       },
     ],
   },
@@ -172,7 +186,7 @@ const ResumeContent = () => {
                 {ExperienceList.map((item, index) => {
                   return (
                     <ResumeItem
-                      key={item.name}
+                      key={item.company}
                       name={item.name}
                       time={item.time}
                       company={item.company}
@@ -217,7 +231,7 @@ const ResumeContent = () => {
             quality={100}
             placeholder="blur"
             priority
-            className="object-cover w-full h-auto aspect-video lg:h-full rounded-lg"
+            className="object-cover w-full h-auto aspect-video lg:h-full"
           />
         </div>
       </div>

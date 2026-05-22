@@ -33,6 +33,7 @@ interface Detail {
     detail: Detail[];
     repository?: string;
     demo?: string;
+    video?: string;
   }
   
   const ProjectNavList = [
@@ -67,6 +68,48 @@ function getFakeId() {
   return _fakeId++;
 }
   const ProjectList: Project[] = [
+    {
+      id: getFakeId(),
+      name: "SASCO",
+      member: "Softworld VietNam Ltd Project",
+      img: "https://res.cloudinary.com/dad0fircy/image/upload/v1751098460/resume/sasco-project.webp",
+      type: "Application, Ecommerce, UI Design",
+      time: "November 2024 - July 2025",
+      detail: [
+        {
+          detailItem:
+            "Rebuilt SASCO's passenger-facing website with a streamlined order flow across 9 distinct sale types, multilingual support, and dynamic content, all instrumented with GA4 and tuned for SEO.",
+        },
+        {
+          detailItem:
+            "Technologies: Next.js, TypeScript, Mantine, TailwindCSS, SCSS, Tanstack Query, Zustand, GA4, SEO.",
+        },
+      ],
+      demo: "https://www.sasco.com.vn",
+      video:
+        "https://res.cloudinary.com/dad0fircy/video/upload/v1751102374/resume/sasco-video.mp4",
+    },
+    {
+      id: getFakeId(),
+      name: "Thirtymall",
+      member: "AIARA Corporation Project",
+      img: "https://res.cloudinary.com/dad0fircy/image/upload/v1779460598/resume/a8954e82-ccfa-4a0c-b451-4693dda0107c.png",
+      type: "Application, Ecommerce, UI Design",
+      time: "January 2024 - June 2024",
+      detail: [
+        {
+          detailItem:
+            "Built and launched an E-commerce platform that specializes in selling near-expiry and overstock goods.",
+        },
+        {
+          detailItem:
+            "Technologies: Next.js, TypeScript, MUI, TailwindCSS, Redux, Turborepo, SEO.",
+        },
+      ],
+      demo: "https://thirtymall.com",
+      video:
+        "https://res.cloudinary.com/dad0fircy/video/upload/v1751101916/resume/thirtymall_video.mp4",
+    },
     {
       id: getFakeId(),
       name: "Phu Yen Eye Hospital",
@@ -437,7 +480,7 @@ const PortfolioContent = () => {
               quality={100}
               placeholder="blur"
               priority
-              className="object-cover w-full h-auto aspect-video lg:h-full rounded-lg"
+              className="object-cover w-full h-auto aspect-video lg:h-full"
             />
           </div>
         </div>
