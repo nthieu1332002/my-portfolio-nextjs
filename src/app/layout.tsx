@@ -5,7 +5,7 @@ import SideBar from "@/components/Sidebar/Sidebar";
 const mont = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nthieu-portfolio.vercel.app/"),
+  metadataBase: new URL("https://nthieu-portfolio.pages.dev/"),
   title: {
     default: "My Portfolio | Nguyen Trung Hieu | Nextjs | SEO",
     template: `%s | Nguyen Trung Hieu | Nextjs | SEO`,
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "Q6IrZ6WdultCzfn7p0wuDtiaHfqW21m_2aVGHethVOg",
-    
+
   },
 };
 

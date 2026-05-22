@@ -38,7 +38,7 @@ const ResumeItem = ({
         <Link
           href={link}
           target="_blank"
-          className="font-semibold text-base text-primary-color"
+          className="font-semibold text-base text-primary-color w-fit"
         >
           {company}
         </Link>

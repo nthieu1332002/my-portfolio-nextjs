@@ -1,20 +1,35 @@
 import React from "react";
 import { IoLogoReact } from "react-icons/io5";
-import { AiOutlineHtml5, AiOutlineAntDesign } from "react-icons/ai";
-import { FaCss3, FaSass, FaBootstrap, FaNodeJs } from "react-icons/fa";
-import { SiExpress, SiMongodb, SiShadcnui } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io";
-import { BiGitBranch } from "react-icons/bi";
-import { motion } from "framer-motion";
-import { TbBrandReactNative, TbBrandMantine } from "react-icons/tb";
+import { AiOutlineAntDesign } from "react-icons/ai";
+import { FaNodeJs } from "react-icons/fa";
 import {
+  SiExpress,
+  SiMongodb,
+  SiShadcnui,
   SiNextdotjs,
   SiTailwindcss,
   SiTypescript,
-  SiFirebase,
+  SiRedux,
+  SiReactquery,
+  SiAxios,
+  SiSwagger,
+  SiPostman,
+  SiNginx,
+  SiVercel,
+  SiPm2,
+  SiPnpm,
+  SiYarn,
+  SiNpm,
+  SiFramer,
+  SiCloudinary,
+  SiRedis,
   SiMui,
-  SiFlutter,
 } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io";
+import { BiGitBranch } from "react-icons/bi";
+import { motion } from "framer-motion";
+import { TbBrandMantine } from "react-icons/tb";
+import { FaGithub, FaGitlab } from "react-icons/fa6";
 
 import SkillContainer from "../SkillContainer/SkillContainer";
 import { fadeIn } from "@/utils/variants";
@@ -24,40 +39,68 @@ export interface Skill {
   icon: JSX.Element;
 }
 const SkillsList: Skill[] = [
+  // Frontend Frameworks & Libraries
   {
-    name: "NextJs",
+    name: "Next.js",
     icon: <SiNextdotjs size="70" />,
   },
   {
-    name: "ReactJs",
+    name: "React",
     icon: <IoLogoReact size="70" />,
-  },
-  {
-    name: "HTML",
-    icon: <AiOutlineHtml5 size="70" />,
-  },
-  {
-    name: "Css",
-    icon: <FaCss3 size="70" />,
-  },
-  {
-    name: "Scss",
-    icon: <FaSass size="70" />,
-  },
-  {
-    name: "Javascript",
-    icon: <IoLogoJavascript size="70" />,
   },
   {
     name: "TypeScript",
     icon: <SiTypescript size="70" />,
   },
   {
-    name: "NodeJs",
+    name: "JavaScript",
+    icon: <IoLogoJavascript size="70" />,
+  },
+  // Styling & Animation
+  {
+    name: "Tailwind CSS",
+    icon: <SiTailwindcss size="70" />,
+  },
+  {
+    name: "Shadcn UI",
+    icon: <SiShadcnui size="70" />,
+  },
+  {
+    name: "Material UI",
+    icon: <SiMui size="70" />,
+  },
+  {
+    name: "Ant Design",
+    icon: <AiOutlineAntDesign size="70" />,
+  },
+  {
+    name: "Mantine",
+    icon: <TbBrandMantine size="70" />,
+  },
+  {
+    name: "Framer Motion",
+    icon: <SiFramer size="70" />,
+  },
+  // State Management & Data Fetching
+  {
+    name: "Redux",
+    icon: <SiRedux size="70" />,
+  },
+  {
+    name: "Tanstack Query",
+    icon: <SiReactquery size="70" />,
+  },
+  {
+    name: "Axios",
+    icon: <SiAxios size="70" />,
+  },
+  // Backend
+  {
+    name: "Node.js",
     icon: <FaNodeJs size="70" />,
   },
   {
-    name: "ExpressJS",
+    name: "Express.js",
     icon: <SiExpress size="70" />,
   },
   {
@@ -65,43 +108,67 @@ const SkillsList: Skill[] = [
     icon: <SiMongodb size="70" />,
   },
   {
-    name: "React Native",
-    icon: <TbBrandReactNative size="70" />,
+    name: "Redis",
+    icon: <SiRedis size="70" />,
+  },
+  {
+    name: "Cloudinary",
+    icon: <SiCloudinary size="70" />,
   },
 ];
 
 const OtherSkillsList: Skill[] = [
+  // API & Testing
+  {
+    name: "Swagger",
+    icon: <SiSwagger size="70" />,
+  },
+  {
+    name: "Postman",
+    icon: <SiPostman size="70" />,
+  },
+  // {
+  //   name: "Playwright",
+  //   icon: <SiPlaywright size="70" />,
+  // },
+  // DevOps & Deployment
+  {
+    name: "PM2",
+    icon: <SiPm2 size="70" />,
+  },
+  {
+    name: "Nginx",
+    icon: <SiNginx size="70" />,
+  },
+  {
+    name: "Vercel",
+    icon: <SiVercel size="70" />,
+  },
+  // Version Control
   {
     name: "Git",
     icon: <BiGitBranch size="70" />,
   },
   {
-    name: "Bootstrap",
-    icon: <FaBootstrap size="70" />,
+    name: "Github",
+    icon: <FaGithub size="70" />,
   },
   {
-    name: "Tailwindcss",
-    icon: <SiTailwindcss size="70" />,
+    name: "Gitlab",
+    icon: <FaGitlab size="70" />,
+  },
+  // Package Managers
+  {
+    name: "npm",
+    icon: <SiNpm size="70" />,
   },
   {
-    name: "AntDesign",
-    icon: <AiOutlineAntDesign size="70" />,
+    name: "pnpm",
+    icon: <SiPnpm size="70" />,
   },
   {
-    name: "MUI",
-    icon: <SiMui size="70" />,
-  },
-  {
-    name: "ShadcnUI",
-    icon: <SiShadcnui size="70" />,
-  },
-  {
-    name: "Mantine",
-    icon: <TbBrandMantine size="70" />,
-  },
-  {
-    name: "Firebase",
-    icon: <SiFirebase size="70" />,
+    name: "yarn",
+    icon: <SiYarn size="70" />,
   },
 ];
 const Skills = () => {

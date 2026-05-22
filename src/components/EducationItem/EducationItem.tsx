@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Education } from "../ResumeContent/ResumeContent";
 
-const EducationItem = ({name, time, title, link , description}: Education) => {
+const EducationItem = ({ name, time, title, link, description }: Education) => {
   const quote = {
     initial: {
       opacity: 0,
@@ -26,7 +26,7 @@ const EducationItem = ({name, time, title, link , description}: Education) => {
         <Link
           href={link}
           target="_blank"
-          className="font-semibold text-base text-primary-color"
+          className="font-semibold text-base text-primary-color w-fit"
         >
           {title}
         </Link>

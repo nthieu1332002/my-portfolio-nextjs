@@ -29,6 +29,47 @@ export interface Education {
 }
 const ExperienceList: Experience[] = [
   {
+    name: "Front-end Developer (Full-stack Exposure)",
+    time: "October 2024 - Now",
+    company: "Softworld VietNam Ltd",
+    link: "https://softworldvietnam.com/",
+    description: [
+      {
+        detail: "Led frontend development for enterprise and corporate web applications, delivering high-performance, responsive, and user-centric interfaces.",
+      },
+      {
+        detail: "Defined frontend architecture and selected appropriate technology stacks to ensure scalability, maintainability, and long-term growth.",
+      },
+      {
+        detail: "Established coding standards, reusable component patterns, and best practices to maintain consistency across projects.",
+      },
+      {
+        detail: "Conducted code reviews, mentored junior developers, and guided implementation approaches to improve code quality and team productivity.",
+      },
+      {
+        detail: "Managed pull requests, resolved merge conflicts, and ensured clean, structured integration into the codebase.",
+      },
+      {
+        detail: "Developed and integrated RESTful APIs using ASP.NET to support dynamic data processing and system scalability.",
+      },
+      {
+        detail: "Implemented Google Analytics (GA4) and Google Tag Manager to track user behavior and optimize conversion performance.",
+      },
+      {
+        detail: "Improved SEO performance (20% → 100%) through technical optimizations, including metadata, structured data, and performance tuning.",
+      },
+      {
+        detail: "Built and customized CMS-based solutions using WordPress (Elementor) and Microsoft Power Pages.",
+      },
+      {
+        detail: "Worked with Dataverse to design and manage data-driven features for enterprise applications.",
+      },
+      {
+        detail: "Collaborated cross-functionally with designers, backend developers, and stakeholders to deliver end-to-end solutions aligned with business goals.",
+      },
+    ],
+  },
+  {
     name: "Freelance Fullstack Web Developer",
     time: "Aug 2024 - Oct 2024",
     company: "Phu Yen Eye Hospital",
@@ -39,34 +80,30 @@ const ExperienceList: Experience[] = [
       },
       {
         detail:
-          "Managed deployment on a VPS with Docker for environment consistency, utilizing GitHub Actions CI/CD workflows for automated, reliable updates.",
+          "Implemented advanced SEO strategies that boosted organic traffic by over 200% and significantly improved search visibility that double the number of pages ranking on Google's first page.",
       },
-      {
-        detail:
-          "Developed and executed advanced SEO strategies to enhance search visibility and drive organic traffic growth.",
-      }
     ],
   },
   {
-    name: "Junior Front-end Developer",
+    name: "Front-End Developer (Remote)",
     time: "Nov 2023 - Sep 2024",
-    company: "Aiara Corporation - Remote",
+    company: "Aiara Corporation (Korea)",
     link: "https://aiaracorp.com/",
     description: [
       {
-        detail: "Collaborated with 3 other team members to complete UI and implement functionalities for both website and mobile sections.",
+        detail: "Collaborated with other team members to complete UI and implement functionalities for both website and mobile sections based on detailed design specifications.",
       },
       {
         detail:
-          "Developed fully reusable code to streamline future projects and enhance efficiency.",
+          "Executed a content-driven and technical SEO strategy that boosted organic traffic by 200% and earned #1 positions on Google for several targeted, high-traffic keywords.",
       },
       {
         detail:
-          "Managed and maintained over 60 web and mobile pages, including graphics and online marketing materials, ensuring optimal functionality and visual appeal.",
+          "Managed and optimized 100+ pages, focusing on performance, accessibility, and reusable components.",
       },
       {
         detail:
-          "Implemented effective SEO strategies.",
+          "Built a reusable component library to streamline development and ensure consistency.",
       },
     ],
   },
@@ -121,9 +158,32 @@ const ResumeContent = () => {
             <h1 className="font-bold text-[4rem] lg:text-[6rem] text-white uppercase absolute left-0 top-[-50px] w-full opacity-[0.1] whitespace-no-wrap leading-[170px] text-center overflow-hidden pointer-events-none">
               resume
             </h1>
-            <div className="md:flex md:gap-5">
-              
-              <div className="flex-1">
+            <div>
+              <div className="mb-10">
+                <motion.h2
+                  variants={fadeIn("left", 0.2)}
+                  initial="hidden"
+                  animate="show"
+                  exit="hidden"
+                  className="text-center section-title mb-5 md:text-left"
+                >
+                  <span className="text-primary-color">My</span> Experience
+                </motion.h2>
+                {ExperienceList.map((item, index) => {
+                  return (
+                    <ResumeItem
+                      key={item.name}
+                      name={item.name}
+                      time={item.time}
+                      company={item.company}
+                      link={item.link}
+                      description={item.description}
+                      delay={index}
+                    />
+                  );
+                })}
+              </div>
+              <div>
                 <motion.h2
                   variants={fadeIn("left", 0.2)}
                   initial="hidden"
@@ -142,31 +202,6 @@ const ResumeContent = () => {
                       title={item.title}
                       link={item.link}
                       description={item.description}
-                    />
-                  );
-                })}
-              </div>
-              <div className="invisible md:visible border-l-[1px]"></div>
-              <div className="flex-1">
-                <motion.h2
-                  variants={fadeIn("right", 0.2)}
-                  initial="hidden"
-                  animate="show"
-                  exit="hidden"
-                  className="text-center section-title mb-5 md:text-left"
-                >
-                  <span className="text-primary-color">My</span> Experience
-                </motion.h2>
-                {ExperienceList.map((item, index) => {
-                  return (
-                    <ResumeItem
-                      key={item.name}
-                      name={item.name}
-                      time={item.time}
-                      company={item.company}
-                      link={item.link}
-                      description={item.description}
-                      delay={index}
                     />
                   );
                 })}
